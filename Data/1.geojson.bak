@@ -1,1 +1,4 @@
-sdfsdfsdf
+{
+"APIBaseUrl":"http://10.1.37.12:90",
+"PUrl":"http://10.1.37.12:9083"
+}
