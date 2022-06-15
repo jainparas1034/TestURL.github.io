@@ -1,6 +1,8 @@
 {
 "APIBaseUrl":"https://c1bf-120-59-27-34.in.ngrok.io/",
-"PUrl":"http://10.1.37.12:9083/"
+"PUrl":"http://10.1.37.12:9083/",
+"LocalAPIBaseUrl":"http://10.1.37.12:90/",
+"LocalPUrl":"http://10.1.37.12:9083/"
 }
 
 
