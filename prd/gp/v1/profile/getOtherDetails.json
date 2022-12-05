@@ -1,0 +1,71 @@
+{
+  "message": "<Message string>",
+  "response": {
+    Details: [
+      {
+        heading: "Other Details",
+        values: [
+          {
+            label: "Nearest Bus Stop",
+            value: "AGALPUR"
+          },
+          {
+            label: "Distance From Nearest Bus Stop",
+            value: "1"
+          },
+          {
+            label: "Home Stay Available",
+            value: "No"
+          },
+          {
+            label: "GP Attractions",
+            value: "temples"
+          },
+          {
+            label: "Description",
+            value: "other"
+          }
+        ]
+      },
+      {
+        heading: "Infrastructure Details",
+        values: [
+          {
+            label: "Panchayat Library",
+            value: "No"
+          },
+          {
+            label: "Panchayat Bhawan (PB)",
+            value: "No"
+          },
+          {
+            label: "Computer/Laptop/Printers/Scanner etc. availability in Panchayat Bhawan",
+            value: "No"
+          },
+          {
+            label: "Internet service available in Panchayat Bhawan",
+            value: "No"
+          },
+          {
+            label: "Types of Connection",
+            value: "Wi-Fi"
+          },
+          {
+            label: "Is Common Service Centre available in Panchayat",
+            value: "No"
+          }
+        ]
+      },
+      {
+        heading: "PESA Details",
+        values: [
+          {
+            label: "Is scheduled GP/ Village Panchayat under PESA/ 6th Scheduled Area Act.",
+            value: "	No"
+          }
+        ]
+      }
+    ],
+    
+  }
+}
