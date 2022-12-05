@@ -2,219 +2,219 @@
   "message": "Data has been available",
   "response": [
     {
-      localBodyTypeCode: 262066,
-      localbodytypename: "AGAR MALWA"
+      "localBodyTypeCode": 262066,
+      "localbodytypename": "AGAR MALWA"
     },
     {
-      localBodyTypeCode: 583,
-      localbodytypename: "ALIRAJPUR"
+      "localBodyTypeCode": 583,
+      "localbodytypename": "ALIRAJPUR"
     },
     {
-      localBodyTypeCode: 349,
-      localbodytypename: "ANUPPUR"
+      "localBodyTypeCode": 349,
+      "localbodytypename": "ANUPPUR"
     },
     {
-      localBodyTypeCode: 350,
-      localbodytypename: "ASHOKNAGAR"
+      "localBodyTypeCode": 350,
+      "localbodytypename": "ASHOKNAGAR"
     },
 	
 	{
-      localBodyTypeCode: 304,
-      localbodytypename: "BALANGIR"
+      "localBodyTypeCode": 304,
+      "localbodytypename": "BALANGIR"
     },
 	
 	
     {
-      localBodyTypeCode: 351,
-      localbodytypename: "BALAGHAT"
+      "localBodyTypeCode": 351,
+      "localbodytypename": "BALAGHAT"
     },
     {
-      localBodyTypeCode: 352,
-      localbodytypename: "BARWANI"
+      "localBodyTypeCode": 352,
+      "localbodytypename": "BARWANI"
     },
     {
-      localBodyTypeCode: 353,
-      localbodytypename: "BETUL"
+      "localBodyTypeCode": 353,
+      "localbodytypename": "BETUL"
     },
     {
-      localBodyTypeCode: 354,
-      localbodytypename: "BHIND"
+      "localBodyTypeCode": 354,
+      "localbodytypename": "BHIND"
     },
     {
-      localBodyTypeCode: 355,
-      localbodytypename: "BHOPAL"
+      "localBodyTypeCode": 355,
+      "localbodytypename": "BHOPAL"
     },
     {
-      localBodyTypeCode: 356,
-      localbodytypename: "BURHANPUR"
+      "localBodyTypeCode": 356,
+      "localbodytypename": "BURHANPUR"
     },
     {
-      localBodyTypeCode: 357,
-      localbodytypename: "CHHATARPUR"
+      "localBodyTypeCode": 357,
+      "localbodytypename": "CHHATARPUR"
     },
     {
-      localBodyTypeCode: 358,
-      localbodytypename: "CHHINDWARA"
+      "localBodyTypeCode": 358,
+      "localbodytypename": "CHHINDWARA"
     },
     {
-      localBodyTypeCode: 359,
-      localbodytypename: "DAMOH"
+      "localBodyTypeCode": 359,
+      "localbodytypename": "DAMOH"
     },
     {
-      localBodyTypeCode: 360,
-      localbodytypename: "DATIA"
+      "localBodyTypeCode": 360,
+      "localbodytypename": "DATIA"
     },
     {
-      localBodyTypeCode: 361,
-      localbodytypename: "DEWAS"
+      "localBodyTypeCode": 361,
+      "localbodytypename": "DEWAS"
     },
     {
-      localBodyTypeCode: 362,
-      localbodytypename: "DHAR"
+      "localBodyTypeCode": 362,
+      "localbodytypename": "DHAR"
     },
     {
-      localBodyTypeCode: 363,
-      localbodytypename: "DINDORI"
+      "localBodyTypeCode": 363,
+      "localbodytypename": "DINDORI"
     },
     {
-      localBodyTypeCode: 364,
-      localbodytypename: "EAST NIMAR"
+      "localBodyTypeCode": 364,
+      "localbodytypename": "EAST NIMAR"
     },
     {
-      localBodyTypeCode: 365,
-      localbodytypename: "GUNA"
+      "localBodyTypeCode": 365,
+      "localbodytypename": "GUNA"
     },
     {
-      localBodyTypeCode: 366,
-      localbodytypename: "GWALIOR"
+      "localBodyTypeCode": 366,
+      "localbodytypename": "GWALIOR"
     },
     {
-      localBodyTypeCode: 367,
-      localbodytypename: "HARDA"
+      "localBodyTypeCode": 367,
+      "localbodytypename": "HARDA"
     },
     {
-      localBodyTypeCode: 368,
-      localbodytypename: "HOSHANGABAD"
+      "localBodyTypeCode": 368,
+      "localbodytypename": "HOSHANGABAD"
     },
     {
-      localBodyTypeCode: 369,
-      localbodytypename: "INDORE"
+      "localBodyTypeCode": 369,
+      "localbodytypename": "INDORE"
     },
     {
-      localBodyTypeCode: 370,
-      localbodytypename: "JABALPUR"
+      "localBodyTypeCode": 370,
+      "localbodytypename": "JABALPUR"
     },
     {
-      localBodyTypeCode: 371,
-      localbodytypename: "JHABUA"
+      "localBodyTypeCode": 371,
+      "localbodytypename": "JHABUA"
     },
     {
-      localBodyTypeCode: 372,
-      localbodytypename: "KATNI"
+      "localBodyTypeCode": 372,
+      "localbodytypename": "KATNI"
     },
     {
-      localBodyTypeCode: 373,
-      localbodytypename: "KHARGONE"
+      "localBodyTypeCode": 373,
+      "localbodytypename": "KHARGONE"
     },
     {
-      localBodyTypeCode: 374,
-      localbodytypename: "MANDLA"
+      "localBodyTypeCode": 374,
+      "localbodytypename": "MANDLA"
     },
     {
-      localBodyTypeCode: 375,
-      localbodytypename: "MANDSAUR"
+      "localBodyTypeCode": 375,
+      "localbodytypename": "MANDSAUR"
     },
     {
-      localBodyTypeCode: 376,
-      localbodytypename: "MORENA"
+      "localBodyTypeCode": 376,
+      "localbodytypename": "MORENA"
     },
     {
-      localBodyTypeCode: 377,
-      localbodytypename: "NARSINGHPUR"
+      "localBodyTypeCode": 377,
+      "localbodytypename": "NARSINGHPUR"
     },
     {
-      localBodyTypeCode: 378,
-      localbodytypename: "NEEMUCH"
+      "localBodyTypeCode": 378,
+      "localbodytypename": "NEEMUCH"
     },
     {
-      localBodyTypeCode: 299945,
-      localbodytypename: "NIWARI"
+      "localBodyTypeCode": 299945,
+      "localbodytypename": "NIWARI"
     },
     {
-      localBodyTypeCode: 379,
-      localbodytypename: "PANNA"
+      "localBodyTypeCode": 379,
+      "localbodytypename": "PANNA"
     },
     {
-      localBodyTypeCode: 380,
-      localbodytypename: "RAISEN"
+      "localBodyTypeCode": 380,
+      "localbodytypename": "RAISEN"
     },
     {
-      localBodyTypeCode: 381,
-      localbodytypename: "RAJGARH"
+      "localBodyTypeCode": 381,
+      "localbodytypename": "RAJGARH"
     },
     {
-      localBodyTypeCode: 382,
-      localbodytypename: "RATLAM"
+      "localBodyTypeCode": 382,
+      "localbodytypename": "RATLAM"
     },
     {
-      localBodyTypeCode: 383,
-      localbodytypename: "REWA"
+      "localBodyTypeCode": 383,
+      "localbodytypename": "REWA"
     },
     {
-      localBodyTypeCode: 384,
-      localbodytypename: "SAGAR"
+      "localBodyTypeCode": 384,
+      "localbodytypename": "SAGAR"
     },
     {
-      localBodyTypeCode: 385,
-      localbodytypename: "SATNA"
+      "localBodyTypeCode": 385,
+      "localbodytypename": "SATNA"
     },
     {
-      localBodyTypeCode: 386,
-      localbodytypename: "SEHORE"
+      "localBodyTypeCode": 386,
+      "localbodytypename": "SEHORE"
     },
     {
-      localBodyTypeCode: 387,
-      localbodytypename: "SEONI"
+      "localBodyTypeCode": 387,
+      "localbodytypename": "SEONI"
     },
     {
-      localBodyTypeCode: 388,
-      localbodytypename: "SHAHDOL"
+      "localBodyTypeCode": 388,
+      "localbodytypename": "SHAHDOL"
     },
     {
-      localBodyTypeCode: 389,
-      localbodytypename: "SHAJAPUR"
+      "localBodyTypeCode": 389,
+      "localbodytypename": "SHAJAPUR"
     },
     {
-      localBodyTypeCode: 390,
-      localbodytypename: "SHEOPUR"
+      "localBodyTypeCode": 390,
+      "localbodytypename": "SHEOPUR"
     },
     {
-      localBodyTypeCode: 391,
-      localbodytypename: "SHIVPURI"
+      "localBodyTypeCode": 391,
+      "localbodytypename": "SHIVPURI"
     },
     {
-      localBodyTypeCode: 392,
-      localbodytypename: "SIDHI"
+      "localBodyTypeCode": 392,
+      "localbodytypename": "SIDHI"
     },
     {
-      localBodyTypeCode: 582,
-      localbodytypename: "SINGRAULI"
+      "localBodyTypeCode": 582,
+      "localbodytypename": "SINGRAULI"
     },
     {
-      localBodyTypeCode: 393,
-      localbodytypename: "TIKAMGARH"
+      "localBodyTypeCode": 393,
+      "localbodytypename": "TIKAMGARH"
     },
     {
-      localBodyTypeCode: 394,
-      localbodytypename: "UJJAIN"
+      "localBodyTypeCode": 394,
+      "localbodytypename": "UJJAIN"
     },
     {
-      localBodyTypeCode: 395,
-      localbodytypename: "UMARIA"
+      "localBodyTypeCode": 395,
+      "localbodytypename": "UMARIA"
     },
     {
-      localBodyTypeCode: 396,
-      localbodytypename: "VIDISHA"
+      "localBodyTypeCode": 396,
+      "localbodytypename": "VIDISHA"
     }
   ]
 }

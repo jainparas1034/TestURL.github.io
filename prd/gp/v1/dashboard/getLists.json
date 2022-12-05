@@ -1,20 +1,20 @@
 {
   "message": "Dashboard Details have been available",
   "response": {
-    photoURLs: [
+    "photoURLs": [
       "https://upload.wikimedia.org/wikipedia/commons/d/d5/Muhamma_grama_panchayath.jpg",
       "https://www.isdm.org.in/sites/default/files/gram-panchayat-in-a-gunghat.jpg",
       "https://www.jagranimages.com/images/newimg/25032021/25_03_2021-24man_24_24032021_455_21496876_62218.jpg"
     ],
-    data: [
+    "data": [
       {
-        heading: "Approved Activities",
-        labels: [
+        "heading": "Approved Activities",
+        "labels": [
           "S.No.",
           "Activity Type",
           "Count"
         ],
-        values: [
+        "values": [
           [
             "1",
             "Fresh Activity",
@@ -38,13 +38,13 @@
         ]
       },
       {
-        heading: "Physical Progress",
-        labels: [
+        "heading": "Physical Progress",
+        "labels": [
           "S.No.",
           "Physical Progress Type",
           "Count"
         ],
-        values: [
+        "values": [
           [
             "1",
             "Progress Started",
@@ -68,14 +68,14 @@
         ]
       },
       {
-        heading: "Schemewise Receipts & Expenditure",
-        labels: [
+        "heading": "Schemewise Receipts & Expenditure",
+        "labels": [
           "S.No.",
           "Scheme Name",
           "Receipts (in Rs.)",
           "Expenditure (in Rs.)"
         ],
-        values: [
+        "values": [
           [
             "1",
             "Scheme -1",
@@ -92,13 +92,13 @@
         ]
       },
       {
-        heading: "Asset Details",
-        labels: [
+        "heading": "Asset Details",
+        "labels": [
           "S.No.",
           "Asset Type",
           "Count"
         ],
-        values: [
+        "values": [
           [
             "1",
             "Movable",
@@ -112,13 +112,13 @@
         ]
       },
       {
-        heading: "Account Details",
-        labels: [
+        "heading": "Account Details",
+        "labels": [
           "S.No.",
           "Account Type",
           "Count"
         ],
-        values: [
+        "values": [
           [
             "1",
             "Bank Account",
@@ -137,13 +137,13 @@
         ]
       },
       {
-        heading: "Other Details",
-        labels: [
+        "heading": "Other Details",
+        "labels": [
           "SECC Data",
           "GP Details",
           "Count"
         ],
-        values: [
+        "values": [
           [
             "1",
             "No. of Villages",
@@ -162,16 +162,16 @@
         ]
       }
     ],
-    details: [
+    "details": [
       {
-        heading: "Demographic Details",
-        labels: [
+        "heading": "Demographic Details",
+        "labels": [
           "S.No.",
           "Population",
           "Male",
           "Female"
         ],
-        values: [
+        "values": [
           [
             "1",
             "Total",
@@ -193,13 +193,13 @@
         ]
       },
       {
-        heading: "GP Details",
-        labels: [
+        "heading": "GP Details",
+        "labels": [
           "S.No.",
           "GP Details",
           "Count"
         ],
-        values: [
+        "values": [
           [
             "1",
             "No. of Villages",
@@ -253,14 +253,14 @@
         ]
       }
     ],
-    beneficiaryData: [
+    "beneficiaryData": [
       {
-        label: "SECC Data",
-        link: "https://missionantyodaya.nic.in/ma2019/getGpdpPDF2019/115759"
+        "label": "SECC Data",
+        "link": "https://missionantyodaya.nic.in/ma2019/getGpdpPDF2019/115759"
       },
       {
-        label: "Ministry Antyodaya Data",
-        link: "https://missionantyodaya.nic.in/ma2019/getGpdpPDF2019/115759"
+        "label": "Ministry Antyodaya Data",
+        "link": "https://missionantyodaya.nic.in/ma2019/getGpdpPDF2019/115759"
       }
     ]
   }

@@ -3,16 +3,16 @@
   "response": [
   
    {
-      bpId: 3647,
-      name: "AGALPUR"
+      "bpId": 3647,
+      "name": "AGALPUR"
     },
     {
-      bpId: 4140,
-      name: "BERASIA"
+      "bpId": 4140,
+      "name": "BERASIA"
     },
     {
-      bpId: 4141,
-      name: "PHANDA"
+      "bpId": 4141,
+      "name": "PHANDA"
     }
     
   ]

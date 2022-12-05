@@ -3,14 +3,14 @@
   "response": {
     "villages": [
       {
-        lgdCode: 419839,
-        name: "Agalpur",
-        populationAsCensus2011: 4234
+        "lgdCode": 419839,
+        "name": "Agalpur",
+        "populationAsCensus2011": 4234
       },
       {
-        lgdCode: 419840,
-        name: "Gudimunda",
-        populationAsCensus2011: 647
+        "lgdCode": 419840,
+        "name": "Gudimunda",
+        "populationAsCensus2011": 647
       }      
     ]
   }

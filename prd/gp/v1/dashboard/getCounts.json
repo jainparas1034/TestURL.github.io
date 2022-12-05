@@ -3,20 +3,20 @@
   "response": {
     counts: [
       {
-        label: "Estimated funds",
-        value: "15 Cr"
+        "label": "Estimated funds",
+        "value": "15 Cr"
       },
       {
-        label: "Funds Available",
-        value: "5 Cr"
+        "label": "Funds Available",
+        "value": "5 Cr"
       },
       {
-        label: "Received Funds",
-        value: "10 Cr"
+        "label": "Received Funds",
+        "value": "10 Cr"
       },
       {
-        label: "Expenditure",
-        value: "5 Cr"
+        "label": "Expenditure",
+        "value": "5 Cr"
       }
     ]
   }

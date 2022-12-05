@@ -2,84 +2,84 @@
   "message": "Data has been available",
   "response": [
     {
-      gpId: 115759,
-      name: "AGALPUR"
+      "gpId": 115759,
+      "name": "AGALPUR"
     },
     {
-      gpId: 115760,
-      name: "BABUFASAD"
+      "gpId": 115760,
+      "name": "BABUFASAD"
     },
     {
-      gpId: 115761,
-      name: "BADTIKA"
+      "gpId": 115761,
+      "name": "BADTIKA"
     },
     {
-      gpId: 115762,
-      name: "BAKTI"
+      "gpId": 115762,
+      "name": "BAKTI"
     },
     {
-      gpId: 115763,
-      name: "BENDRA"
+      "gpId": 115763,
+      "name": "BENDRA"
     },
     {
-      gpId: 115764,
-      name: "BHARSUJA"
+      "gpId": 115764,
+      "name": "BHARSUJA"
     },
     {
-      gpId: 115765,
-      name: "BUDULA"
+      "gpId": 115765,
+      "name": "BUDULA"
     },
     {
-      gpId: 115766,
-      name: "DUDUKA"
+      "gpId": 115766,
+      "name": "DUDUKA"
     },
     {
-      gpId: 115767,
-      name: "JHARNIPALI"
+      "gpId": 115767,
+      "name": "JHARNIPALI"
     },
     {
-      gpId: 115768,
-      name: "KUTASINGHA"
+      "gpId": 115768,
+      "name": "KUTASINGHA"
     },
     {
-      gpId: 275195,
-      name: "LUHURAMUNDA"
+      "gpId": 275195,
+      "name": "LUHURAMUNDA"
     },
     {
-      gpId: 275206,
-      name: "MURSUNDHI"
+      "gpId": 275206,
+      "name": "MURSUNDHI"
     },
     {
-      gpId: 115769,
-      name: "NAGAON(A)"
+      "gpId": 115769,
+      "name": "NAGAON(A)"
     },
     {
-      gpId: 115770,
-      name: "NAGAON(B)"
+      "gpId": 115770,
+      "name": "NAGAON(B)"
     },
     {
-      gpId: 115771,
-      name: "NUNIAPALI"
+      "gpId": 115771,
+      "name": "NUNIAPALI"
     },
     {
-      gpId: 115772,
-      name: "PATUAPALI"
+      "gpId": 115772,
+      "name": "PATUAPALI"
     },
     {
-      gpId: 115773,
-      name: "RINBACHAN"
+      "gpId": 115773,
+      "name": "RINBACHAN"
     },
     {
-      gpId: 115774,
-      name: "ROTH"
+      "gpId": 115774,
+      "name": "ROTH"
     },
     {
-      gpId: 115775,
-      name: "SALEBHATA"
+      "gpId": 115775,
+      "name": "SALEBHATA"
     },
     {
-      gpId: 115776,
-      name: "UPARBAHAL"
+      "gpId": 115776,
+      "name": "UPARBAHAL"
     }
   ]
 }

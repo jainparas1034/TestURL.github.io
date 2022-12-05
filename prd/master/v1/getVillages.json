@@ -3,12 +3,12 @@
   "response": [
   
    {
-      VillageId: 1,
-      name: "ARRAWATI"
+      "VillageId": 1,
+      "name": "ARRAWATI"
     },
     {
-      VillageId: 2,
-      name: "ARRAWATI-2"
+      "VillageId": 2,
+      "name": "ARRAWATI-2"
     }
     
     

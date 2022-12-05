@@ -1,12 +1,7 @@
 {
-  message: "Data has been available",
-  response: {
-    name: "Piyali Roy chowdhury",
-    gender: "Female",
-    genderId: 2,
-    organization: "GRAM PANCHAYAT",
-    designation: "Secretary",
-    mobileNo: "9748190382",
-    email: "piyali.roy@nic.in"
-  }
+"APIBaseUrl":"http://10.1.37.12:90/",
+"PUrl":"http://10.1.37.12:9083/"
+
 }
+
+

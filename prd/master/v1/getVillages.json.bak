@@ -1,0 +1,16 @@
+{
+  "message": "Data has been available",
+  "response": [
+  
+   {
+      VillageId: 1,
+      name: "ARRAWATI"
+    },
+    {
+      VillageId: 2,
+      name: "ARRAWATI-2"
+    }
+    
+    
+  ]
+}

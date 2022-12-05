@@ -1,0 +1,64 @@
+{
+   "message": "Data has been available",
+  "response": [
+  {
+    category: "P",
+    level: "D",
+    localBodyTypeCode: 1,
+    localbodytypename: "District Panchayat",
+    name: "Zila Panchayat"
+    },
+  {
+    category: "P",
+    level: "I",
+    localBodyTypeCode: 2,
+    localbodytypename: "Intermediate Panchayat",
+    name: "Janpad Panchayat"
+    },
+  {
+    category: "P",
+    level: "V",
+    localBodyTypeCode: 3,
+    localbodytypename: "Village Panchayat",
+    name: "Gram Panchayat",
+      },
+  {
+    category: "U",
+    level: "I",
+    localBodyTypeCode: 4,
+    localbodytypename: "Municipal Corporations",
+    name: "Municipal Corporation"
+  },
+  {
+    category: "U",
+    level: "I",
+    localBodyTypeCode: 5,
+    localbodytypename: "Municipality",
+    name: "Municipality",
+    
+  },
+  {
+    category: "U",
+    level: "I",
+    localBodyTypeCode: 6,
+    localbodytypename: "Notified Area Council",
+    name: "Notified Area Council",
+    nomenclatureLocal: "Notified Area Council"
+  },
+  {
+    category: "U",
+    level: "I",
+    localBodyTypeCode: 7,
+    localbodytypename: "Town Panchayat",
+    name: "Town Panchayat",
+    
+  },
+  {
+    category: "U",
+    level: "I",
+    localBodyTypeCode: 8,
+    localbodytypename: "Cantonment Board",
+    name: "Cantonment Board"
+  },
+  
+]}
