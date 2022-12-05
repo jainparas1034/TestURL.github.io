@@ -1,0 +1,267 @@
+{
+  "message": "Dashboard Details have been available",
+  "response": {
+    photoURLs: [
+      "https://upload.wikimedia.org/wikipedia/commons/d/d5/Muhamma_grama_panchayath.jpg",
+      "https://www.isdm.org.in/sites/default/files/gram-panchayat-in-a-gunghat.jpg",
+      "https://www.jagranimages.com/images/newimg/25032021/25_03_2021-24man_24_24032021_455_21496876_62218.jpg"
+    ],
+    data: [
+      {
+        heading: "Approved Activities",
+        labels: [
+          "S.No.",
+          "Activity Type",
+          "Count"
+        ],
+        values: [
+          [
+            "1",
+            "Fresh Activity",
+            "5"
+          ],
+          [
+            "2",
+            "Operational Activity",
+            "5"
+          ],
+          [
+            "3",
+            "Maintenance Activity",
+            "5"
+          ],
+          [
+            "4",
+            "Upgradation Activity",
+            "5"
+          ]
+        ]
+      },
+      {
+        heading: "Physical Progress",
+        labels: [
+          "S.No.",
+          "Physical Progress Type",
+          "Count"
+        ],
+        values: [
+          [
+            "1",
+            "Progress Started",
+            "5"
+          ],
+          [
+            "2",
+            "Completed",
+            "5"
+          ],
+          [
+            "3",
+            "Suspended",
+            "5"
+          ],
+          [
+            "4",
+            "Abandoned",
+            "5"
+          ]
+        ]
+      },
+      {
+        heading: "Schemewise Receipts & Expenditure",
+        labels: [
+          "S.No.",
+          "Scheme Name",
+          "Receipts (in Rs.)",
+          "Expenditure (in Rs.)"
+        ],
+        values: [
+          [
+            "1",
+            "Scheme -1",
+            "5,00,000",
+            "2,00,000"
+          ],
+          [
+            "2",
+            "Scheme -2",
+            "8,00,000",
+            "5,00,000"
+          ],
+          
+        ]
+      },
+      {
+        heading: "Asset Details",
+        labels: [
+          "S.No.",
+          "Asset Type",
+          "Count"
+        ],
+        values: [
+          [
+            "1",
+            "Movable",
+            "5"
+          ],
+          [
+            "2",
+            "Immovable",
+            "10"
+          ]
+        ]
+      },
+      {
+        heading: "Account Details",
+        labels: [
+          "S.No.",
+          "Account Type",
+          "Count"
+        ],
+        values: [
+          [
+            "1",
+            "Bank Account",
+            "5"
+          ],
+          [
+            "2",
+            "Post Office",
+            "10"
+          ],
+          [
+            "2",
+            "Treasury Account",
+            "10"
+          ]
+        ]
+      },
+      {
+        heading: "Other Details",
+        labels: [
+          "SECC Data",
+          "GP Details",
+          "Count"
+        ],
+        values: [
+          [
+            "1",
+            "No. of Villages",
+            "3"
+          ],
+          [
+            "2",
+            "No. of Villages",
+            "18"
+          ],
+          [
+            "3",
+            "Elected Representatives",
+            "2"
+          ]
+        ]
+      }
+    ],
+    details: [
+      {
+        heading: "Demographic Details",
+        labels: [
+          "S.No.",
+          "Population",
+          "Male",
+          "Female"
+        ],
+        values: [
+          [
+            "1",
+            "Total",
+            "200",
+            "100"
+          ],
+          [
+            "2",
+            "SC",
+            "50",
+            "5"
+          ],
+          [
+            "3",
+            "ST",
+            "5",
+            "8"
+          ]
+        ]
+      },
+      {
+        heading: "GP Details",
+        labels: [
+          "S.No.",
+          "GP Details",
+          "Count"
+        ],
+        values: [
+          [
+            "1",
+            "No. of Villages",
+            "3"
+          ],
+          [
+            "1",
+            "No. of Employees",
+            "30"
+          ],
+          [
+            "2",
+            "No. of Wards",
+            "18"
+          ],
+          [
+            "3",
+            "Elected Representatives",
+            "2"
+          ],
+          [
+            "4",
+            "Schools",
+            "15"
+          ],
+          [
+            "5",
+            "Anganwadis",
+            "2"
+          ],
+          [
+            "6",
+            "Heath Centers",
+            "2"
+          ],
+          [
+            "7",
+            "Govt. Buildings",
+            "2"
+          ],
+          [
+            "8",
+            "Panchayat Buildings",
+            "2"
+          ],
+          [
+            "9",
+            "Schemes",
+            "2"
+          ]
+        ]
+      }
+    ],
+    beneficiaryData: [
+      {
+        label: "SECC Data",
+        link: "https://missionantyodaya.nic.in/ma2019/getGpdpPDF2019/115759"
+      },
+      {
+        label: "Ministry Antyodaya Data",
+        link: "https://missionantyodaya.nic.in/ma2019/getGpdpPDF2019/115759"
+      }
+    ]
+  }
+}
