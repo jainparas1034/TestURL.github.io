@@ -19,8 +19,8 @@
 	<li><a  href="/prd/gp/v1/dashboard/getLists.json"> getLists </a> </li>
 </ul>
 
-<b> profile,   </b>
-<ul>  a.	Tourist Attractions,  Facilities, Schools , Aganwadis, Medical Facilities:  Hospitals, PHC, CHC,
+<b> profile,  a.	Tourist Attractions,  Facilities, Schools , Aganwadis, Medical Facilities:  Hospitals, PHC, CHC,  </b>
+<ul>
 	<li><a  href="/prd/gp/v1/profile/getUserProfile.json"> getUserProfile </a> </li>
 	<li><a  href="/prd/gp/v1/profile/getOfficers.json"> getOfficers </a> </li>
 	<li><a  href="/prd/gp/v1/profile/getGeneralDetails.json"> getGeneralDetails </a> </li>

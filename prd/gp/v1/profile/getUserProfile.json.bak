@@ -1,44 +1,12 @@
 {
   message: "Data has been available",
   response: {
-    officers: [
-      {
-        name: "Dolly Rai",
-        gender: "Female",
-        designation: "Sarpanch",
-        mobileNo: "9748190382",
-        email: "piyali.roy@nic.in",
-        qualification: "Graduate",
-        Photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6D9bvT8lltK8oK51RbbSgGgq3fCCdeL6ghDygJQJv5ynL-ohOO6n3Djs_2bJU-u93cjk&usqp=CAU"
-      },
-      {
-        name: "Piyali Roy chowdhury",
-        gender: "Female",
-        designation: "Secretary",
-        mobileNo: "9748190382",
-        email: "piyali.roy@nic.in",
-        qualification: "Graduate",
-        Photo: "NA"
-      },
-      {
-        name: "Ashok Chouhan",
-        gender: "Male",
-        designation: "Employment Assistant",
-        mobileNo: "9748190382",
-        email: "piyali.roy@nic.in",
-        qualification: "Graduate",
-        Photo: "https://i.pinimg.com/474x/4c/cd/08/4ccd086a8b7970c7a1ab4961e9bfcafc.jpg"
-      },
-      {
-        name: "Sanat Jain",
-        gender: "Male",
-        designation: "Employment Assistant",
-        mobileNo: "9748190382",
-        email: "piyali.roy@nic.in",
-        qualification: "Graduate",
-        Photo: "https://i.pinimg.com/550x/f5/3e/c6/f53ec61db2e49c82b057554cb4a0cb91.jpg"
-      },
-      
-    ]
+    name: "Piyali Roy chowdhury",
+    gender: "Female",
+    genderId: 2,
+    organization: "GRAM PANCHAYAT",
+    designation: "Secretary",
+    mobileNo: "9748190382",
+    email: "piyali.roy@nic.in"
   }
 }
