@@ -1,15 +1,21 @@
 {
   "message": "Data has been available",
   "response": [
-{
-    "id": 23,
-    "name": "Madhya Pradesh",
-    "isUT": false
-  	},
-{
-    "id": 24,
-    "name": "Uttar Pradesh",
-    "isUT": false
-  	},
-]
+    {
+      "id": 23,
+      "name": "Madhya Pradesh",
+      "isUT": false
+    },
+    {
+      "id": 21,
+      "name": "ODISHA",
+      "isUT": false
+    },
+    {
+      "id": 24,
+      "name": "Uttar Pradesh",
+      "isUT": false
+    },
+    
+  ]
 }

@@ -1,0 +1,19 @@
+{
+  "message": "Data has been available",
+  "response": [
+  
+   {
+      bpId: 3647,
+      name: "AGALPUR"
+    },
+    {
+      bpId: 4140,
+      name: "BERASIA"
+    },
+    {
+      bpId: 4141,
+      name: "PHANDA"
+    }
+    
+  ]
+}
