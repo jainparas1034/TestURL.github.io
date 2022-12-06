@@ -1,0 +1,21 @@
+{
+  "message": "Data has been available",
+  "response": {
+    "data": [
+      {
+        "subject": "जन सम्वाद",
+        "date": "17/03/2023",
+        "time": "12:00 PM",
+        "chairman": "Mr. Ram Mohan Dubey",
+        "place": "पंचायत भवन"
+      },
+	  {
+        "subject": "स्वच्छ भारत मिशन",
+        "date": "01/02/2023",
+        "time": "12:00 PM",
+        "chairman": "Mr. Anil Pandey",
+        "place": "पंचायत भवन"
+      }
+    ]
+  }
+}

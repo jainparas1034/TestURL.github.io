@@ -44,11 +44,11 @@
 	<li><a  href="/prd/gp/v1/profile/getvillageDetails.json"> getvillageDetails </a> </li>
 </ul>
 
-<!-- <b> Dashboard </b> -->
-<!-- <ul> -->
-	<!-- <li><a  href="/prd/gp/v1/dashboard/getCounts.json"> getCounts </a> </li> -->
-	<!-- <li><a  href="/prd/gp/v1/dashboard/getLists.json"> getLists </a> </li> -->
-<!-- </ul> -->
+<b> Dashboard </b>
+<ul>
+	<li><a  href="/prd/gp/v1/dashboard/getCounts.json"> getCounts </a> </li>
+	<li><a  href="/prd/gp/v1/dashboard/getLists.json"> getLists </a> </li>
+</ul>
 
 <b> 7. Gram Sabha </b>
 <ul>

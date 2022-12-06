@@ -2,15 +2,7 @@
   "message": "Data has been available",
   "response": {
     "officers": [
-      {
-        "name": "Dolly Rai",
-        "gender": "Female",
-        "designation": "Sarpanch",
-        "mobileNo": "9748190382",
-        "email": "piyali.roy@nic.in",
-        "qualification": "Graduate",
-        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6D9bvT8lltK8oK51RbbSgGgq3fCCdeL6ghDygJQJv5ynL-ohOO6n3Djs_2bJU-u93cjk&usqp=CAU"
-      },
+      
       {
         "name": "Piyali Roy chowdhury",
         "gender": "Female",

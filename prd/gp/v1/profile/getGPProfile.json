@@ -34,8 +34,6 @@
       "line2": "Dharavi",
       "line3": "N.A.",
       "pinCode": 462023,
-      "mobileNo": "9748190382",
-      "email": "piyali.roy@nic.in",
       "website": "https://egramswaraj.gov.in/"
     },
     "otherDetails": {
@@ -44,17 +42,9 @@
       "homeStayAvailable": "No",
       "line3": "N.A.",
       "attractions": "No",
-      "lat": "21.025538",
-      "long": "83.400019",
-      "description": '<h3 style="text-align:center;">Gram Panchayat Achievements</h1><ul><li>Gram Panchayat Itraur situated at 10 km. form Jagdishpur Office </li><li>Best Panchayat National Awards in 2022 </li></ul>',
+      "description": '<h3 style="text-align:center;">Gram Panchayat Achievements</h1><ul><li>Gram Panchayat Itraur situated at 10 km. form Jagdishpur Office </li><li>Best Panchayat National Awards in 2022 </li></ul>'
       
-    },
-    "socialProfile": {
-      "youTube": "https://www.youtube.com/",
-      "twitter": "https://twitter.com/i/flow/login",
-      "facebook": "https://www.facebook.com/",
-      "instagram": "https://www.instagram.com/"
-    },
+    }
     
   }
 }

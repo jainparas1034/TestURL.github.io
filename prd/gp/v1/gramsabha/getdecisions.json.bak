@@ -1,0 +1,25 @@
+{
+  "message": "Data has been available",
+  "response": {
+    "data": [
+      {
+        "subject": "पेय जल, स्वरोजगार",
+        "date": "17/06/2022",
+        "time": "12:00 PM",
+        "chairman": "Mr. Ram Mohan Dubey",
+        "place": "पंचायत भवन",
+        "male": "58",
+        "female": "50"
+      },
+      {
+        "subject": "प्रधान मंत्री आवास योजना",
+        "date": "17/05/2022",
+        "time": "12:00 PM",
+        "chairman": "Mr. Ram Mohan Dubey",
+        "place": "पंचायत भवन",
+        "male": "20",
+        "female": "10"
+      }
+    ]
+  }
+}

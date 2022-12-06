@@ -6,6 +6,70 @@
       "https://www.isdm.org.in/sites/default/files/gram-panchayat-in-a-gunghat.jpg",
       "https://www.jagranimages.com/images/newimg/25032021/25_03_2021-24man_24_24032021_455_21496876_62218.jpg"
     ],
+	"sarpanch": {
+      "name": "Salge Hembram",
+      "dob": "05-09-1990",
+      "gender": "Female",
+      "category": "General",
+      "educationQualification": "Graduate Degree other than Technical Degree",
+      "areaOfExpertise": "",
+      "mobileNo": "9748190382",
+      "email": "piyali.roy@nic.in",
+      "photoURL": "<URL>"
+    },
+    "secretary": {
+      "name": "Salge Hembram",
+      "gender": "Female",
+      "category": "General",
+      "educationQualification": "Graduate Degree other than Technical Degree",
+      "mobileNo": "9748190382",
+      "email": "piyali.roy@nic.in",
+      "photoURL": "<URL>"
+    },
+    "address": {
+      "stateId": 21,
+      "state": "ODISHA",
+      "zpId": 304,
+      "zp": "BALANGIR",
+      "bpId": 3647,
+      "bp": "AGALPUR",
+      "gpId": 115759,
+      "gp": " AGALPUR(115759)",
+      "line1": "GP-AGALPUR PO-AGALPUR PS- LOISINGHA DIST-BALANGIR (ODISHA)",
+      "line2": "Dharavi",
+      "line3": "N.A.",
+      "pinCode": 462023,
+      "website": "https://egramswaraj.gov.in/"
+    },
+    "otherDetails": {
+      "nearestBusStop": "Ankiya",
+      "distanceFronNBS": "Ankiya",
+      "homeStayAvailable": "No",
+      "line3": "N.A.",
+      "attractions": "No",
+      "description": '<h3 style="text-align:center;">Gram Panchayat Achievements</h1><ul><li>Gram Panchayat Itraur situated at 10 km. form Jagdishpur Office </li><li>Best Panchayat National Awards in 2022 </li></ul>'
+      
+    },
+	counts: [
+      {
+        "label": "Estimated funds",
+        "value": "15 Cr"
+      },
+      {
+        "label": "Funds Available",
+        "value": "5 Cr"
+      },
+      {
+        "label": "Received Funds",
+        "value": "10 Cr"
+      },
+      {
+        "label": "Expenditure",
+        "value": "5 Cr"
+      }
+    ],
+	
+	
     "data": [
       {
         "heading": "Approved Activities",
