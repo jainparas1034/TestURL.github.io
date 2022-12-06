@@ -1,0 +1,28 @@
+{
+  "message": "<Message string>",
+  "response": {
+    "bankAccount": {
+      "name": "Axis Bank",
+      "accountNo": "201458789",
+      "ifsc": "AXIS4587898",
+      "amount": "5,00,000"
+      
+    },
+    "transactions": [
+      {
+        "date": "25/12/2022",
+        "description": "784582578-5HFGHH IGA-1 Scheme",
+        "type": "D",
+        "transactionAmount": "1,00,000",
+        "balanceAmount":  "5,00,000"
+      },
+      {
+        "date": "19/10/2022",
+        "description": "587-4526588-5HFGHH Mahila Bal Vikas Scheme",
+        "type": "C",
+        "transactionAmount": "50,000",
+        "balanceAmount": "5,50,000"
+      }
+    ]
+  }
+}
