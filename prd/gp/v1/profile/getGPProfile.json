@@ -13,15 +13,23 @@
       "photoURL": "<URL>"
     },
     "secretary": {
-     "name": "Salge Hembram",
-     "gender": "Female",
-     "category": "General",
-     "educationQualification": "Graduate Degree other than Technical Degree",
-     "mobileNo": "9748190382",
-     "email": "piyali.roy@nic.in",
-     "photoURL": "<URL>"
+      "name": "Salge Hembram",
+      "gender": "Female",
+      "category": "General",
+      "educationQualification": "Graduate Degree other than Technical Degree",
+      "mobileNo": "9748190382",
+      "email": "piyali.roy@nic.in",
+      "photoURL": "<URL>"
     },
-	 "address": {
+    "address": {
+      "stateId": 21,
+      "state": "ODISHA",
+      "zpId": 304,
+      "zp": "BALANGIR",
+      "bpId": 3647,
+      "bp": "AGALPUR",
+      "gpId": 115759,
+      "gp": " AGALPUR(115759)",
       "line1": "GP-AGALPUR PO-AGALPUR PS- LOISINGHA DIST-BALANGIR (ODISHA)",
       "line2": "Dharavi",
       "line3": "N.A.",
@@ -30,24 +38,23 @@
       "email": "piyali.roy@nic.in",
       "website": "https://egramswaraj.gov.in/"
     },
-	"otherDetails": {
+    "otherDetails": {
       "nearestBusStop": "Ankiya",
-	  "distanceFronNBS": "Ankiya",
+      "distanceFronNBS": "Ankiya",
       "homeStayAvailable": "No",
       "line3": "N.A.",
-      "Attractions": "No",
-	  "lat":"21.025538",
-	  "long":"83.400019"
-      "Description": '<h3 style="text-align:center;">Gram Panchayat Achievements</h1><ul><li>Gram Panchayat Itraur situated at 10 km. form Jagdishpur Office </li><li>Best Panchayat National Awards in 2022 </li></ul>',
-	  
+      "attractions": "No",
+      "lat": "21.025538",
+      "long": "83.400019",
+      "description": '<h3 style="text-align:center;">Gram Panchayat Achievements</h1><ul><li>Gram Panchayat Itraur situated at 10 km. form Jagdishpur Office </li><li>Best Panchayat National Awards in 2022 </li></ul>',
+      
     },
-	"SocialProfile":
-	{
-		"youTube":"https://www.youtube.com/",
-		"twitter":"https://twitter.com/i/flow/login",
-		"facebook":"https://www.facebook.com/",
-		"instagram":"https://www.instagram.com/"
-	},
-	
+    "socialProfile": {
+      "youTube": "https://www.youtube.com/",
+      "twitter": "https://twitter.com/i/flow/login",
+      "facebook": "https://www.facebook.com/",
+      "instagram": "https://www.instagram.com/"
+    },
+    
   }
 }
