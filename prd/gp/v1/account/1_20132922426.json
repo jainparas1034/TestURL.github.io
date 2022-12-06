@@ -1,0 +1,51 @@
+{
+  "message": "<Message string>",
+  "response": {
+    "bankAccounts": [
+      {
+        "name": "BANK OF INDIA",
+        "branch": "Balangir, BANK OF INDIA ",
+        "accountTypeId": "2",
+        "accountNo": "20132922426",
+        "ifsc": "BOI014568",
+        "amount": "10,000",
+		"transactionURL": "https://jainparas1034.github.io/prd/gp/v1/account/1/20132922426.json",
+        "imageURL": "https://prd.mp.gov.in/Handlers/Banks_Logo_byID.ashx?BankId=5"
+      },
+      {
+        "name": "Axis Bank",
+        "branch": "Balangir, Axis Bank",
+        "accountTypeId": "2",
+        "accountNo": "201458789",
+        "ifsc": "AXIS4587898",
+        "amount": "5,00,000",
+		"transactionURL": "https://jainparas1034.github.io/prd/gp/v1/account/1/201458789.json",
+        "imageURL": "https://prd.mp.gov.in/Handlers/Banks_Logo_byID.ashx?BankId=3"
+      },
+      
+    ],
+    "poAccounts": [
+      {
+        "name": "Balangir Post Office",
+        "type": "Head Office",
+        "accountTypeId": "2",
+        "accountNo": "PO5878978718",
+        "amount": "5,00,000",
+		"transactionURL": "https://jainparas1034.github.io/prd/gp/v1/account/2/PO5878978718.json",
+        "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnA-N6KgXM-q_s20zsDeQcLG80uBh9H0EIwQ&usqp=CAU"
+      }
+    ],
+    "treasuryAccounts": [
+      {
+        "name": "Anugul District Treasury",
+        "ddoCode": "TRA45789532",
+        "accountName": "Anugul Gram Panchayat Indra Awas Yojna",
+        "accountTypeId": "3",
+        "accountNo": "T4587",
+        "amount": "10,00,000",
+		"transactionURL": "https://jainparas1034.github.io/prd/gp/v1/account/3/T4587.json",
+        "imageURL": "https://t4.ftcdn.net/jpg/04/80/91/23/360_F_480912371_g3vpWJR19VO4GDBgFpCXB1yKznBd2toJ.jpg"
+      }
+    ]
+  }
+}

@@ -28,7 +28,8 @@
 <b> profile,   </b>
 <!-- <ul>   -->
 <!-- a.	Tourist Attractions,  Facilities, Schools , Aganwadis, Medical Facilities:  Hospitals, PHC, CHC, -->
-	<li><a  href="/prd/gp/v1/profile/getUserProfile.json"> GP Details</a></li>
+	<!-- <li><a  href="/prd/gp/v1/profile/getUserProfile.json"> GP Details</a></li> -->
+	<li><a  href="/prd/gp/v1/profile/getGPDetails.json"> GP Details</a></li>
 	<!-- <li><a  href="/prd/gp/v1/profile/getGPProfile.json"> Profile </a></li> -->
 	<li><a  href="/prd/gp/v1/dashboard/getLists.json"> Profile </a></li>
 	
@@ -60,8 +61,8 @@
 
 <b>  Bank </b>
 <ul>
-	<li><a  href="/prd/gp/v1/gramsabha/getsuchna.json"> suchna </a> </li>
-	<li><a  href="/prd/gp/v1/gramsabha/getdecisions.json"> Decisions </a> </li>
+	<li><a  href="/prd/gp/v1/account/getAccountDetails.json"> Account List </a> </li>
+	
 </ul>
 
 <b>  Scheme </b>

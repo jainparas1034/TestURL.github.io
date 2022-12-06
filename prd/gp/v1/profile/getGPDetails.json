@@ -22,16 +22,16 @@
     "website": "https://egramswaraj.gov.in",
     "photos": [
       {
-        url: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Muhamma_grama_panchayath.jpg",
-        caption: " Gram Panchayat - AGALPUR "
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Muhamma_grama_panchayath.jpg",
+        "caption": " Gram Panchayat - AGALPUR "
       },
       {
-        url: "https://www.isdm.org.in/sites/default/files/gram-panchayat-in-a-gunghat.jpg",
-        caption: " Gram Panchayat - AGALPUR "
+        "url": "https://www.isdm.org.in/sites/default/files/gram-panchayat-in-a-gunghat.jpg",
+        "caption": " Gram Panchayat - AGALPUR "
       },
       {
-        url: "https://www.jagranimages.com/images/newimg/25032021/25_03_2021-24man_24_24032021_455_21496876_62218.jpg",
-        caption: " Gram Panchayat - AGALPUR "
+        "url": "https://www.jagranimages.com/images/newimg/25032021/25_03_2021-24man_24_24032021_455_21496876_62218.jpg",
+        "caption": " Gram Panchayat - AGALPUR "
       }
     ],
     "socialProfile": {
