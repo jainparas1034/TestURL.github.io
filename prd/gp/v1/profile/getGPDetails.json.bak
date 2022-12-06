@@ -13,13 +13,11 @@
       "line1": "GP-AGALPUR PO-AGALPUR PS- LOISINGHA DIST-BALANGIR (ODISHA)",
       "line2": "Dharavi",
       "line3": "N.A.",
-      "pinCode": 462023
-    },
-    "location": {
+      "pinCode": 462023,
       "lat": "21.025538",
-      "long": "83.400019"
+      "long": "83.400019",
+      "website": "https://egramswaraj.gov.in"
     },
-    "website": "https://egramswaraj.gov.in",
     "photos": [
       {
         url: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Muhamma_grama_panchayath.jpg",
