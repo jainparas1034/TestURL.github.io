@@ -1,0 +1,53 @@
+{
+  "message": "<Message string>",
+  "response": {
+    "sarpanch": {
+      "name": "Salge Hembram",
+      "dob": "05-09-1990",
+      "gender": "Female",
+      "category": "General",
+      "educationQualification": "Graduate Degree other than Technical Degree",
+      "areaOfExpertise": "",
+      "mobileNo": "9748190382",
+      "email": "piyali.roy@nic.in",
+      "photoURL": "<URL>"
+    },
+    "secretary": {
+     "name": "Salge Hembram",
+     "gender": "Female",
+     "category": "General",
+     "educationQualification": "Graduate Degree other than Technical Degree",
+     "mobileNo": "9748190382",
+     "email": "piyali.roy@nic.in",
+     "photoURL": "<URL>"
+    },
+	 "address": {
+      "line1": "GP-AGALPUR PO-AGALPUR PS- LOISINGHA DIST-BALANGIR (ODISHA)",
+      "line2": "Dharavi",
+      "line3": "N.A.",
+      "pinCode": 462023,
+      "mobileNo": "9748190382",
+      "email": "piyali.roy@nic.in",
+      "website": "https://egramswaraj.gov.in/"
+    },
+	"otherDetails": {
+      "nearestBusStop": "Ankiya",
+	  "distanceFronNBS": "Ankiya",
+      "homeStayAvailable": "No",
+      "line3": "N.A.",
+      "Attractions": "No",
+	  "lat":"21.025538",
+	  "long":"83.400019"
+      "Description": '<h3 style="text-align:center;">Gram Panchayat Achievements</h1><ul><li>Gram Panchayat Itraur situated at 10 km. form Jagdishpur Office </li><li>Best Panchayat National Awards in 2022 </li></ul>',
+	  
+    },
+	"SocialProfile":
+	{
+		"youTube":"https://www.youtube.com/",
+		"twitter":"https://twitter.com/i/flow/login",
+		"facebook":"https://www.facebook.com/",
+		"instagram":"https://www.instagram.com/"
+	},
+	
+  }
+}
