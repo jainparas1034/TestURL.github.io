@@ -6,7 +6,7 @@
       "https://www.isdm.org.in/sites/default/files/gram-panchayat-in-a-gunghat.jpg",
       "https://www.jagranimages.com/images/newimg/25032021/25_03_2021-24man_24_24032021_455_21496876_62218.jpg"
     ],
-    "sarpanch": {
+	"sarpanch": {
       "name": "Salge Hembram",
       "dob": "05-09-1990",
       "gender": "Female",
@@ -48,8 +48,9 @@
       "line3": "N.A.",
       "attractions": "No",
       "description": '<h3 style="text-align:center;">Gram Panchayat Achievements</h1><ul><li>Gram Panchayat Itraur situated at 10 km. form Jagdishpur Office </li><li>Best Panchayat National Awards in 2022 </li></ul>'
+      
     },
-    counts: [
+	counts: [
       {
         "label": "Estimated funds",
         "value": "15 Cr"
@@ -67,6 +68,8 @@
         "value": "5 Cr"
       }
     ],
+	
+	
     "data": [
       {
         "heading": "Approved Activities",
@@ -310,18 +313,7 @@
             "9",
             "Schemes",
             "2"
-          ],
-          [
-            "10",
-            "PHC",
-            "2"
-          ],
-          [
-            "11",
-            "CHC",
-            "2"
-          ],
-          
+          ]
         ]
       }
     ],
