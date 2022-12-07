@@ -1,36 +1,36 @@
 {
-  "message": "Data has been available",
-  "response": {
-    "officers": [
-      
-      {
-        "name": "Piyali Roy chowdhury",
-        "gender": "Female",
-        "designation": "Secretary",
-        "mobileNo": "9748190382",
-        "email": "piyali.roy@nic.in",
-        "qualification": "Graduate",
-        "photo": "NA"
-      },
-      {
-        "name": "Ashok Chouhan",
-        "gender": "Male",
-        "designation": "Employment Assistant",
-        "mobileNo": "9748190382",
-        "email": "piyali.roy@nic.in",
-        "qualification": "Graduate",
-        "photo": "https://i.pinimg.com/474x/4c/cd/08/4ccd086a8b7970c7a1ab4961e9bfcafc.jpg"
-      },
-      {
-        "name": "Sanat Jain",
-        "gender": "Male",
-        "designation": "Employment Assistant",
-        "mobileNo": "9748190382",
-        "email": "piyali.roy@nic.in",
-        "qualification": "Graduate",
-        "photo": "https://i.pinimg.com/550x/f5/3e/c6/f53ec61db2e49c82b057554cb4a0cb91.jpg"
-      },
-      
-    ]
-  }
+	"message": "Data has been available",
+	"response": {
+		"officers": [
+
+			{
+				"name": "Piyali Roy chowdhury",
+				"gender": "Female",
+				"designation": "Secretary",
+				"mobileNo": "9748190382",
+				"email": "piyali.roy@nic.in",
+				"qualification": "Graduate",
+				"photo": "NA"
+			},
+			{
+				"name": "Ashok Chouhan",
+				"gender": "Male",
+				"designation": "Employment Assistant",
+				"mobileNo": "9748190382",
+				"email": "piyali.roy@nic.in",
+				"qualification": "Graduate",
+				"photo": "https://i.pinimg.com/474x/4c/cd/08/4ccd086a8b7970c7a1ab4961e9bfcafc.jpg"
+			},
+			{
+				"name": "Sanat Jain",
+				"gender": "Male",
+				"designation": "Employment Assistant",
+				"mobileNo": "9748190382",
+				"email": "piyali.roy@nic.in",
+				"qualification": "Graduate",
+				"photo": "https://i.pinimg.com/550x/f5/3e/c6/f53ec61db2e49c82b057554cb4a0cb91.jpg"
+			}
+
+		]
+	}
 }

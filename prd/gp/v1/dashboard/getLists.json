@@ -47,9 +47,9 @@
       "homeStayAvailable": "No",
       "line3": "N.A.",
       "attractions": "No",
-      "description": '<h3 style="text-align:center;">Gram Panchayat Achievements</h1><ul><li>Gram Panchayat Itraur situated at 10 km. form Jagdishpur Office </li><li>Best Panchayat National Awards in 2022 </li></ul>'
+      "description": "<h3>Gram Panchayat Achievements</h1><ul><li>Gram Panchayat Itraur situated at 10 km. form Jagdishpur Office </li><li>Best Panchayat National Awards in 2022 </li></ul>"
     },
-    counts: [
+    "counts": [
       {
         "label": "Estimated funds",
         "value": "15 Cr"
@@ -148,8 +148,7 @@
             "Scheme -2",
             "8,00,000",
             "5,00,000"
-          ],
-          
+          ]
         ]
       },
       {
@@ -320,8 +319,7 @@
             "11",
             "CHC",
             "2"
-          ],
-          
+          ]
         ]
       }
     ],

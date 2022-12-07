@@ -1,27 +1,26 @@
 {
-  "message": "<Message string>",
-  "response": {
-    "bankAccount": {
-      "name": "Balangir Post Office",
-      "accountNo": "PO5878978718",
-      "amount": "5,00,000",
-      
-    },
-    "transactions": [
-      {
-        "date": "25/11/2022",
-        "description": "PO-458 IGA-1 Scheme",
-        "type": "D",
-        "transactionAmount": "1,00,000",
-        "balanceAmount": "5,00,000"
-      },
-      {
-        "date": "19/10/2022",
-        "description": "PO-87858 Mahila Bal Vikas Scheme",
-        "type": "C",
-        "transactionAmount": "50,000",
-        "balanceAmount": "5,50,000"
-      }
-    ]
-  }
+	"message": "<Message string>",
+	"response": {
+		"bankAccount": {
+			"name": "Balangir Post Office",
+			"accountNo": "PO5878978718",
+			"amount": "5,00,000"
+
+		},
+		"transactions": [{
+				"date": "25/11/2022",
+				"description": "PO-458 IGA-1 Scheme",
+				"type": "D",
+				"transactionAmount": "1,00,000",
+				"balanceAmount": "5,00,000"
+			},
+			{
+				"date": "19/10/2022",
+				"description": "PO-87858 Mahila Bal Vikas Scheme",
+				"type": "C",
+				"transactionAmount": "50,000",
+				"balanceAmount": "5,50,000"
+			}
+		]
+	}
 }

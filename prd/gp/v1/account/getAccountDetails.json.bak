@@ -43,7 +43,7 @@
         "accountTypeId": "3",
         "accountNo": "T4587",
         "amount": "10,00,000",
-		"transactionURL": "https://jainparas1034.github.io/prd/gp/v1/account/3/T4587.json",
+		"transactionURL": "https://jainparas1034.github.io/prd/gp/v1/account/3_T4587.json",
         "imageURL": "https://t4.ftcdn.net/jpg/04/80/91/23/360_F_480912371_g3vpWJR19VO4GDBgFpCXB1yKznBd2toJ.jpg"
       }
     ]
