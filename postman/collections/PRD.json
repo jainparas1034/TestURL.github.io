@@ -1,0 +1,486 @@
+{
+	"info": {
+		"_postman_id": "9daf3d35-bd26-4515-bad1-e9107dd902a6",
+		"name": "PRD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "3067395-9daf3d35-bd26-4515-bad1-e9107dd902a6"
+	},
+	"item": [
+		{
+			"name": "GPDP",
+			"item": [
+				{
+					"name": "FacilitorReport",
+					"item": [
+						{
+							"name": "GetLocalBody",
+							"id": "b9891a18-f181-4be1-b7d2-7c650d205230",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "bda1af8f-5ad3-47cc-91aa-c2f53117925e"
+				},
+				{
+					"name": "1_Login_zp",
+					"id": "bcab8fc7-114a-40af-b50f-803641f94cfc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"loginId\": \"8413062363\",\r\n    \"password\": \"e86f78a8a3caf0b60d8e74e5942aa6d86dc150cd3c03338aef25b7d2d7e3acc7\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gpdp.nic.in/demo/service/mobileAuthanticate",
+							"protocol": "https",
+							"host": [
+								"gpdp",
+								"nic",
+								"in"
+							],
+							"path": [
+								"demo",
+								"service",
+								"mobileAuthanticate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "1_Login_bp",
+					"id": "eab2711c-2cb4-47eb-9d01-ea5818b9bb54",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"loginId\":\"8413062363\",\"password\":\"e86f78a8a3caf0b60d8e74e5942aa6d86dc150cd3c03338aef25b7d2d7e3acc7\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gpdp.nic.in/demo/service/mobileAuthanticate",
+							"protocol": "https",
+							"host": [
+								"gpdp",
+								"nic",
+								"in"
+							],
+							"path": [
+								"demo",
+								"service",
+								"mobileAuthanticate"
+							]
+						},
+						"description": "Base 64 encryption"
+					},
+					"response": [
+						{
+							"id": "a5ab4ed2-ae84-47b2-a558-8353947d7f12",
+							"name": "1_Login_bp",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"loginId\": \"8413062363\",\r\n    \"password\": \"e86f78a8a3caf0b60d8e74e5942aa6d86dc150cd3c03338aef25b7d2d7e3acc7\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://gpdp.nic.in/demo/service/mobileAuthanticate",
+									"protocol": "https",
+									"host": [
+										"gpdp",
+										"nic",
+										"in"
+									],
+									"path": [
+										"demo",
+										"service",
+										"mobileAuthanticate"
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "1_Login_gp",
+					"id": "a2e1fd79-9df3-457b-855d-ae184bde3ba6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"loginId\":\"8413062363\",\"password\":\"e86f78a8a3caf0b60d8e74e5942aa6d86dc150cd3c03338aef25b7d2d7e3acc7\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gpdp.nic.in/demo/service/mobileAuthanticate",
+							"protocol": "https",
+							"host": [
+								"gpdp",
+								"nic",
+								"in"
+							],
+							"path": [
+								"demo",
+								"service",
+								"mobileAuthanticate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get 2_State",
+					"id": "69362cbc-ae44-4b38-8b93-a97bd37ed842",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gpdp.nic.in/demo/service/states",
+							"protocol": "https",
+							"host": [
+								"gpdp",
+								"nic",
+								"in"
+							],
+							"path": [
+								"demo",
+								"service",
+								"states"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get 2.2_Districts",
+					"id": "2c6ced82-1d3e-4f4d-88ac-eba269505012",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gpdp.nic.in/demo/service/lbdetailsbystate/10",
+							"protocol": "https",
+							"host": [
+								"gpdp",
+								"nic",
+								"in"
+							],
+							"path": [
+								"demo",
+								"service",
+								"lbdetailsbystate",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get 2.1_TierSetup",
+					"id": "ae406d05-abee-4841-8bd9-0bc1770b26c5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gpdp.nic.in/demo/service/getTierSetup/10",
+							"protocol": "https",
+							"host": [
+								"gpdp",
+								"nic",
+								"in"
+							],
+							"path": [
+								"demo",
+								"service",
+								"getTierSetup",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get 2.3_Blocks",
+					"id": "984e142b-8b39-4b80-af60-986bbab80c99",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gpdp.nic.in/demo/service/localbody/179",
+							"protocol": "https",
+							"host": [
+								"gpdp",
+								"nic",
+								"in"
+							],
+							"path": [
+								"demo",
+								"service",
+								"localbody",
+								"179"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get 2.4_Villages",
+					"id": "7b330252-6584-4099-aa70-295e6195d27a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gpdp.nic.in/demo/service/localbody/2206",
+							"protocol": "https",
+							"host": [
+								"gpdp",
+								"nic",
+								"in"
+							],
+							"path": [
+								"demo",
+								"service",
+								"localbody",
+								"2206"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get 2.5_TLBLevel",
+					"id": "ee544708-39fd-4690-ae97-30e73dbf3cd2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gpdp.nic.in/demo/service/localbodies/14/276619",
+							"protocol": "https",
+							"host": [
+								"gpdp",
+								"nic",
+								"in"
+							],
+							"path": [
+								"demo",
+								"service",
+								"localbodies",
+								"14",
+								"276619"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get 2.6_FacilitatorEntryList",
+					"id": "99c86f7b-d3f4-44bc-9c18-08e4bcd87fe6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gpdp.nic.in/demo/service/localbodies/14/276619",
+							"protocol": "https",
+							"host": [
+								"gpdp",
+								"nic",
+								"in"
+							],
+							"path": [
+								"demo",
+								"service",
+								"localbodies",
+								"14",
+								"276619"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "79704f66-ef9a-4ef5-b24c-6774208c4eb7"
+		},
+		{
+			"name": "MoPR",
+			"item": [
+				{
+					"name": "1_Login",
+					"id": "fafc485e-d08e-445f-b20f-425ed85c8b17",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"loginId\":\"8413062363\",\"password\":\"e86f78a8a3caf0b60d8e74e5942aa6d86dc150cd3c03338aef25b7d2d7e3acc7\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gpdp.nic.in/demo/service/mobileAuthanticate",
+							"protocol": "https",
+							"host": [
+								"gpdp",
+								"nic",
+								"in"
+							],
+							"path": [
+								"demo",
+								"service",
+								"mobileAuthanticate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "ca6fea9a-f2ad-43ce-aa1f-46ccf4acdced",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "8c9850b4-2557-4490-9cda-a596ff29fc70"
+		},
+		{
+			"name": "eGramSwaraj",
+			"item": [
+				{
+					"name": "1_Login",
+					"id": "b6330327-6c1b-4b9d-86b8-815e5d25d5b5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"loginId\":\"8413062363\",\"password\":\"e86f78a8a3caf0b60d8e74e5942aa6d86dc150cd3c03338aef25b7d2d7e3acc7\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gpdp.nic.in/demo/service/mobileAuthanticate",
+							"protocol": "https",
+							"host": [
+								"gpdp",
+								"nic",
+								"in"
+							],
+							"path": [
+								"demo",
+								"service",
+								"mobileAuthanticate"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "851400fc-1666-4677-b2cd-5e58e94054f6"
+		},
+		{
+			"name": "mActionSpft",
+			"item": [],
+			"id": "d4b5c0ef-d10c-4585-908c-906f84f947bb"
+		},
+		{
+			"name": "New Request",
+			"id": "ecc5e191-484e-4dc8-b4e6-fca7568343b4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}
