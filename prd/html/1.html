@@ -1,0 +1,112 @@
+<!DOCTYPE html >
+<html>
+<head id="Head1" runat="server">
+    <title>District Wise Expenditure Smabal Scheme : </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://prd.mp.gov.in/Assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="http://prd.mp.gov.in/Resources/Validation/jquery-1.10.2.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="http://prd.mp.gov.in/assets/plugins/font-awesome/css/font-awesome.min.css" />
+    <link href="http://prd.mp.gov.in/Resources/css/MyCss.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        strong {
+            color: #b3674a;
+        }
+
+        .container-fluid {
+            padding: 0px;
+        }
+
+        .divbg {
+            /* border-left: 1px solid #ccc;*/
+            border-bottom: 1px solid #ccc;
+            border-top: 1px solid #ccc;
+            padding: 5px;
+            background-color: #f5f5f5;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .text-success {
+        }
+
+        .rrr {
+            width: 100%;
+            height: 5px;
+        }
+
+        .boxsado {
+            min-height: 60px;
+            padding: 5px 5px 5px;
+            margin-bottom: 0px;
+        }
+
+        .input-group-addon {
+            border-radius: unset;
+            color: #b3674a;
+            font-weight: bold;
+            padding: 0px;
+        }
+    </style>
+</head>
+<body style="overflow-x: hidden;">
+    <form id="form1" runat="server">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-default" style="box-shadow: unset;">
+                        <div class="panel-heading">
+                            <strong id="B1" runat="server" class="fontsizes" style="font-weight: bold;">: </strong>
+                            <a  title="Back" style="float:right;" data-dismiss="alert" href="javascript:history.back();"><i class="fa fa-angle-left btn btn-success" style="font-weight: bold;"></i></a>
+                        </div>
+                        <div class="panel-body" style="padding: 0px;">
+                           
+                                    <div class="">
+                                        <div style="margin-bottom: 5px" class="input-group">
+                                            <span class="input-group-addon text-success">
+                                                <div style="width:30px;">
+                                                    1
+                                                </div>
+                                            </span>
+                                            <div class="boxsado">
+                                                <p style="text-align: justify; margin: 0px">
+												<strong>जिला :</strong><strong class="text-success">
+												Bhopal</strong>&nbsp;&nbsp; <strong>
+												lbName
+												</strong></p>
+                                                <div class="clearfix"></div>
+                                                <p style="text-align: justify; margin: 0px"><strong class="text-success">OfficeName </strong></p>
+                                                <div class="clearfix"></div>
+                                                <div class="rrr"></div>
+                                                <div class="clearfix"></div>
+                                                <p style="text-align: justify; margin: 0px">
+												<strong> कुल हितग्राही जिन्हें अंत्येष्टि सहायता राशि का भुगतान किया गया है : </strong>
+												<strong class="text-success">
+												<a href="#" class="text-success">4&nbsp;<i class="fa fa-search "></i></a></strong></p>
+                                                 <div class="clearfix"></div>
+                                                <div class="rrr"></div>
+                                                <div class="clearfix"></div>
+                                                
+                                                <p style="text-align: justify; margin: 0px"><strong> कुल भुगतान की गयी अंत्येष्टि सहायता राशि :</strong><strong class="text-success">44444</strong></p>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                             
+                            <center>
+                            
+                            </center>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <asp:HiddenField ID="hdDistrict" runat="server" Value="0" />
+        <asp:HiddenField ID="hdLbl" runat="server" Value="0" />
+    </form>
+</body>
+
+</html>
