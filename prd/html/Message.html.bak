@@ -1,0 +1,145 @@
+<!DOCTYPE html >
+<html>
+<head id="Head1" runat="server">
+    <title>District Wise Expenditure Smabal Scheme : </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/prd/html/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="http://prd.mp.gov.in/Resources/Validation/jquery-1.10.2.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="http://prd.mp.gov.in/assets/plugins/font-awesome/css/font-awesome.min.css" />
+    <link href="http://prd.mp.gov.in/Resources/css/MyCss.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        strong {
+            color: #47a789;
+        }
+
+        .container-fluid {
+            padding: 0px;
+        }
+
+        .divbg {
+            /* border-left: 1px solid #ccc;*/
+            border-bottom: 1px solid #ccc;
+            border-top: 1px solid #ccc;
+            padding: 5px;
+            background-color: #f5f5f5;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .text-success {
+        }
+
+        .rrr {
+            width: 100%;
+            height: 5px;
+        }
+
+        .boxsado {
+            min-height: 60px;
+            padding: 5px 5px 5px;
+            margin-bottom: 0px;
+        }
+
+        .input-group-addon {
+            border-radius: unset;
+            color: #b3674a;
+            font-weight: bold;
+            padding: 0px;
+        }
+    </style>
+</head>
+<body style="overflow-x: hidden;">
+    <form id="form1" runat="server">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-default" style="box-shadow: unset;">
+                        <div class="panel-heading">
+                            <strong id="B1" runat="server" class="fontsizes" style="font-weight: bold;">: </strong>
+                            <a  title="Back" style="float:right;" data-dismiss="alert" href="javascript:history.back();"><i class="fa fa-angle-left btn btn-success" style="font-weight: bold;"></i></a>
+                        </div>
+                        <div class="panel-body" style="padding: 0px;">
+                           
+                                    <div class="">
+                                        <div style="margin-bottom: 5px" class="input-group">
+                                            <span class="input-group-addon text-success">
+                                                <div style="width:30px;">
+                                                    1
+                                                </div>
+                                            </span>
+                                            <div class="boxsado">
+                                                <p style="text-align: justify; margin: 0px">
+												<strong></strong><strong class="text-success">
+												Message</strong>&nbsp;&nbsp; <strong>
+												
+												</strong></p>
+                                                <div class="clearfix"></div>
+                                                <p style="text-align: justify; margin: 0px"><strong class="text-success"> </strong></p>
+                                                <div class="clearfix"></div>
+                                                <div class="rrr"></div>
+                                                <div class="clearfix"></div>
+                                                <p style="text-align: justify; margin: 0px">
+												<strong>Hon'ble HM's Sandesh / Message is signed dated 14/09/2022</strong>
+												</p>
+                                                 <div class="clearfix"></div>
+                                                <div class="rrr">
+												<a href="https://www.panchayat.gov.in/documents/448457/0/MoS_Hindi.pdf/a624f04b-28d9-b668-6075-91b6856cf4cf?t=1663168737869" >
+												view</a>
+												</div>
+                                                <div class="clearfix"></div>
+                                                
+                                                <p style="text-align: justify; margin: 0px"><strong>17-01-2022</strong><strong class="text-success"></strong></p>
+
+                                            </div>
+
+                                        </div>
+										
+										<div style="margin-bottom: 5px" class="input-group">
+                                            <span class="input-group-addon text-success">
+                                                <div style="width:30px;">
+                                                    1
+                                                </div>
+                                            </span>
+                                            <div class="boxsado">
+                                                <p style="text-align: justify; margin: 0px">
+												<strong></strong><strong class="text-success">
+												Message</strong>&nbsp;&nbsp; <strong>
+												
+												</strong></p>
+                                                <div class="clearfix"></div>
+                                                <p style="text-align: justify; margin: 0px"><strong class="text-success"> </strong></p>
+                                                <div class="clearfix"></div>
+                                                <div class="rrr"></div>
+                                                <div class="clearfix"></div>
+                                                <p style="text-align: justify; margin: 0px">
+												<strong>MPR message regarding Hindi Diwas</strong>
+												</p>
+                                                 <div class="clearfix"></div>
+                                                <div class="rrr"></div>
+                                                <div class="clearfix"></div>
+                                                
+                                                <p style="text-align: justify; margin: 0px"><strong>17-01-2022</strong><strong class="text-success"></strong></p>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                             
+                            <center>
+                            
+                            </center>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+			
+			<div class="card mb-2 p-1" style="box-shadow:0.1rem 0.1rem 0.1rem rgb(75 80 170 / 21%) !important;border:1px solid rgb(215 215 215) !important;background:linear-gradient(45deg, #dae3f7, #f1f1f3)"> <div class="card-body p-1 text-md" style="min-height:250px;max-height:250px;overflow-y:auto;"> <ul class="timelineEngagement pl-3"><!--news starts--><!--news ends--><!--news starts--> <li class="tl-item"> <div class="tl-wrap"><span class="tl-date"><i class="icon-calendar"></i> 16-01-2023</span> <div class="tl-content panel padder b-a slideRight"><span class="arrow left pull-up"></span> <div><a href="/documents/448457/0/CSs+%26+Adv+of+Admn+of+States+%26+UTs+Amrit+Sarovar+RE+16+01+2023.pdf/f3385b06-5563-f943-be15-fd2afd2edfbe?t=1673870164358" target="_blank"><span class="mmTitleValue text-voilet text-lg">D.O. Letter</span> <span class="mmDescriptionValue">Joint D.O. letter dated 16/01/2023 from Secretary, MoPR and Secretary, DoRD reg. Flag Hoisting at Amrit Sarovar Sites on the occasion of Republic Day</span></a></div> </div> </div> </li> <li class="tl-item"> <div class="tl-wrap"><span class="tl-date"><i class="icon-calendar"></i>&ZeroWidthSpace;&ZeroWidthSpace;&ZeroWidthSpace;&ZeroWidthSpace;&ZeroWidthSpace;&ZeroWidthSpace;&ZeroWidthSpace; 28-11-2022</span> <div class="tl-content panel padder b-a slideRight"><span class="arrow left pull-up"></span> <div><a href="/documents/448457/0/DO+Letter+to+States_NPA_28112022+%281%29.pdf/e40fae7e-d807-ceb1-26cb-5812e7156049?t=1669635880514" target="_blank"><span class="mmTitleValue text-voilet text-lg">D.O. Letter</span> <span class="mmDescriptionValue">DO Letter to States NPA</span></a></div> </div> </div> </li> <li class="tl-item"> <div class="tl-wrap"><span class="tl-date"><i class="icon-calendar"></i>&ZeroWidthSpace;&ZeroWidthSpace;&ZeroWidthSpace;&ZeroWidthSpace;&ZeroWidthSpace;&ZeroWidthSpace;&ZeroWidthSpace; 25-11-2022</span> <div class="tl-content panel padder b-a slideRight"><span class="arrow left pull-up"></span> <div><a href="/documents/448457/0/advertisement.pdf/80ba9b79-0c74-d031-367c-0b8852f2f6ad?t=1669614073521" target="_blank"><span class="mmTitleValue text-voilet text-lg">Advertisement</span> <span class="mmDescriptionValue">MoPR Advertisement dated 25-11-2022</span></a></div> </div> </div> </li> <li class="tl-item"> <div class="tl-wrap"><span class="tl-date"><i class="icon-calendar"></i>&ZeroWidthSpace;&ZeroWidthSpace;&ZeroWidthSpace;&ZeroWidthSpace;&ZeroWidthSpace;&ZeroWidthSpace;&ZeroWidthSpace; 23-11-2022</span> <div class="tl-content panel padder b-a slideRight"><span class="arrow left pull-up"></span> <div><a href="/documents/448457/0/20221123164055.pdf/7fe27abb-c84f-2194-7a82-7b9340994c3d?t=1669265852387" target="_blank"><span class="mmTitleValue text-voilet text-lg">Advertisement</span> <span class="mmDescriptionValue">Advertisement for hiring of Consultant (Action Research &amp; Publicity) in Ministry of Panchayati Raj</span></a></div> </div> </div> </li> <li class="tl-item"> <div class="tl-wrap"><span class="tl-date"><i class="icon-calendar"></i>&ZeroWidthSpace;&ZeroWidthSpace;&ZeroWidthSpace;&ZeroWidthSpace;&ZeroWidthSpace;&ZeroWidthSpace;&ZeroWidthSpace; 11-10-2022</span> <div class="tl-content panel padder b-a slideRight"><span class="arrow left pull-up"></span> <div><a href="/documents/448457/0/Tender+document.pdf/29d98f74-53b0-108f-f33d-36719b70e5a4?t=1665557835935" target="_blank"><span class="mmTitleValue text-voilet text-lg">Tender Document</span> <span class="mmDescriptionValue">An e-Tender for Parliament Questions, Spiral Binding and other Important Parliamentary related work has been floated on GeM Portal</span></a></div> </div> </div> </li> <li class="tl-item"> <div class="tl-wrap"><span class="tl-date"><i class="icon-calendar"></i> 14-09-2022</span> <div class="tl-content panel padder b-a slideRight"><span class="arrow left pull-up"></span> <div><a href="/documents/448457/0/MPR_Hindi.pdf/7caf0ca6-abea-2c00-5af6-090b46330bc6?t=1663168765151" target="_blank"><span class="mmTitleValue text-voilet text-lg">Message</span> <span class="mmDescriptionValue">MPR message regarding Hindi Diwas</span></a></div> </div> </div> </li> <li class="tl-item"> <div class="tl-wrap"><span class="tl-date"><i class="icon-calendar"></i> 14-09-2022</span> <div class="tl-content panel padder b-a slideRight"><span class="arrow left pull-up"></span> <div><a href="/documents/448457/0/MoS_Hindi.pdf/a624f04b-28d9-b668-6075-91b6856cf4cf?t=1663168737869" target="_blank"><span class="mmTitleValue text-voilet text-lg">Message</span> <span class="mmDescriptionValue">MoS message regarding Hindi Diwas</span></a></div> </div> </div> </li> <li class="tl-item"> <div class="tl-wrap"><span class="tl-date"><i class="icon-calendar"></i> 14-09-2022</span> <div class="tl-content panel padder b-a slideRight"><span class="arrow left pull-up"></span> <div><a href="/documents/448457/0/HindiDiwas_HMSandesh2022.pdf/af14eb0d-521c-f78f-3ee9-ce5c136ce519?t=1663079535379" target="_blank"><span class="mmTitleValue text-voilet text-lg">Message</span> <span class="mmDescriptionValue">Hon'ble HM's Sandesh / Message is signed dated 14/09/2022</span></a></div> </div> </div> </li> <li class="tl-item"> <div class="tl-wrap"><span class="tl-date"><i class="icon-calendar"></i> 01-09-2022</span> <div class="tl-content panel padder b-a slideRight"><span class="arrow left pull-up"></span> <div><a href="/documents/448457/0/Sarpanch+Pradhan+Mukhiya+Adhyaksh_01092022.pdf/bf584181-be42-1165-afdb-9fe40e2a2e2c?t=1662097943342" target="_blank"><span class="mmTitleValue text-voilet text-lg">D.O. Letter</span> <span class="mmDescriptionValue">Hon'ble Minister(RD &amp; PR)'s Appeal to Gram Panchayats for Active Participation in Selection Process of National Panchayat Awards</span></a></div> </div> </div> </li> <li class="tl-item"> <div class="tl-wrap"><span class="tl-date"><i class="icon-calendar"></i> 06-06-2022</span> <div class="tl-content panel padder b-a slideRight"><span class="arrow left pull-up"></span> <div><a href="/documents/448457/0/D.O+letter+from+Hon%27ble+Prime+Minister.PDF/b643d8ac-111c-e9a5-8501-cfaada62d5c4?t=1654670850761" target="_blank"><span class="mmTitleValue text-voilet text-lg">D.O. Letter</span> <span class="mmDescriptionValue">D.O letter from Hon'ble Prime Minister</span> </a></div> </div> </div> </li> <li class="tl-item"> <div class="tl-wrap"><span class="tl-date"><i class="icon-calendar"></i> 02-06-2022</span> <div class="tl-content panel padder b-a slideRight"><span class="arrow left pull-up"></span> <div><a href="/documents/448457/0/English+Book-+8+Years.pdf/8738638f-1ff9-a8bf-9493-371fabd67864?t=1654151885860" target="_blank"><span class="mmTitleValue text-voilet text-lg">Booklet</span> <span class="mmDescriptionValue">Snippets of 8 Years of Reforms, Initiatives and Achievements</span> </a></div> </div> </div> </li> <li class="tl-item"> <div class="tl-wrap"><span class="tl-date"><i class="icon-calendar"></i> 08-04-2022</span> <div class="tl-content panel padder b-a slideRight"><span class="arrow left pull-up"></span> <div><a href="/documents/448457/0/Secretary+MoPR%27s+DO+%288-4-22%29-Awards+%26+NPRD+2022+%281%29.pdf/d47080de-40fe-36c7-237c-cd3de2cf66fa?t=1649749160307" target="_blank"><span class="mmTitleValue text-voilet text-lg">D.O. Letter</span> <span class="mmDescriptionValue">Secretary MoPR's D.O (08-04-22) Awards &amp; NPRD 2022</span> </a></div> </div> </div> </li> <li class="tl-item"> <div class="tl-wrap"><span class="tl-date"><i class="icon-calendar"></i> 08-03-2022</span> <div class="tl-content panel padder b-a slideRight"><span class="arrow left pull-up"></span> <div><a href="/documents/448457/0/MPR+letter+dated+8.3.2022+to+CMs+of+States.pdf/6fb00878-6e59-cd3b-6764-27c1012a6a5d?t=1653293531526" target="_blank"><span class="mmTitleValue text-voilet text-lg">D.O. Letter</span> <span class="mmDescriptionValue">MPR letter dated (08-03-2022) Gram Urja Swaraj</span> </a></div> </div> </div> </li> <li class="tl-item"> <div class="tl-wrap"><span class="tl-date"><i class="icon-calendar"></i> 20-01-2022</span> <div class="tl-content panel padder b-a slideRight"><span class="arrow left pull-up"></span> <div><a href="/documents/448457/0/RADPI+-+MoPR_SPAB+-+for+20th+January+2022.pdf/95a94a24-51ea-7d98-0e4e-eb50ea6188a8?t=1642677730510" target="_blank"><span class="mmTitleValue text-voilet text-lg">PPT</span> <span class="mmDescriptionValue">PPT on RADPFI Guideline</span> </a></div> </div> </div> </li> <li class="tl-item"> <div class="tl-wrap"><span class="tl-date"><i class="icon-calendar"></i> 20-12-2021</span> <div class="tl-content panel padder b-a slideRight"><span class="arrow left pull-up"></span> <div><a href="/documents/448457/0/MoPR-DO-20-12-2021-Hon%27ble+PM+Message.pdf/88e34ccd-b908-eb06-0537-759f75c90c90?t=1640163351044" target="_blank"><span class="mmTitleValue text-voilet text-lg">D.O. Letter</span> <span class="mmDescriptionValue">Message from Hon’ble Prime Minister for Good Governance Week </span> </a></div> </div> </div> </li> <li class="tl-item"> <div class="tl-wrap"><span class="tl-date"><i class="icon-calendar"></i> 17-12-2021</span> <div class="tl-content panel padder b-a slideRight"><span class="arrow left pull-up"></span> <div><a href="/documents/448457/0/MoPR-DO-Good+Governance+Week-2021.pdf/4b58d67c-20b8-1c78-4f39-645d6b8585a0?t=1640163319339" target="_blank"><span class="mmTitleValue text-voilet text-lg">D.O. Letter</span> <span class="mmDescriptionValue">Good Governance Week (20 – 25 December 2021) on प्रशासन गाँवों की ओर campaign</span> </a></div> </div> </div> </li> <li class="tl-item"> <div class="tl-wrap"><span class="tl-date"><i class="icon-calendar"></i> 15-12-2021</span> <div class="tl-content panel padder b-a slideRight"><span class="arrow left pull-up"></span> <div><a href="/documents/448457/0/MoPR-DO-14-12-2021.pdf/c9978bbe-5147-4876-3ec0-4b4773a57d63?t=1639635487942" target="_blank"><span class="mmTitleValue text-voilet text-lg">D.O. Letter</span> <span class="mmDescriptionValue">Ministry of Defence's Azadi Ka Amrit Mahotsav Iconic Week (13 – 19 December 2021)</span> </a></div> </div> </div> </li> <li class="tl-item"> <div class="tl-wrap"><span class="tl-date"><i class="icon-calendar"></i> 15-12-2021</span> <div class="tl-content panel padder b-a slideRight"><span class="arrow left pull-up"></span> <div><a href="https://pib.gov.in/PressReleasePage.aspx?PRID=1779137" target="_blank"><span class="mmTitleValue text-voilet text-lg">Press Release</span> <span class="mmDescriptionValue"> Launch of PPC , TMP Dashboard and SDG Reports by Hon'ble Union Minister of Rural Development and Panchayati Raj</span> </a></div> </div> </div> </li> <li class="tl-item"> <div class="tl-wrap"><span class="tl-date"><i class="icon-calendar"></i> 15-12-2021</span> <div class="tl-content panel padder b-a slideRight"><span class="arrow left pull-up"></span> <div><a href="/documents/448457/0/Book_SDG+Report+%28Vol.-1+%2829.11.21%29_FINAL.pdf/4fe1071f-9be6-d330-e623-26cead650c74?t=1639556171648" target="_blank"><span class="mmTitleValue text-voilet text-lg">Report</span> <span class="mmDescriptionValue">Expert Group Report on Localization of SDGs Volume I</span> </a></div> </div> </div> </li> <li class="tl-item"> <div class="tl-wrap"><span class="tl-date"><i class="icon-calendar"></i> 15-12-2021</span> <div class="tl-content panel padder b-a slideRight"><span class="arrow left pull-up"></span> <div><a href="/documents/448457/0/Vol2.pdf/f0cf3199-6250-e54b-0cd7-b970ebe67cb1?t=1639560689483" target="_blank"><span class="mmTitleValue text-voilet text-lg">Report</span> <span class="mmDescriptionValue">Expert Group Report on Localization of SDGs Volume II</span> </a></div> </div> </div> </li> <li class="tl-item"> <div class="tl-wrap"><span class="tl-date"><i class="icon-calendar"></i> 16-11-2021</span> <div class="tl-content panel padder b-a slideRight"><span class="arrow left pull-up"></span> <div><a href="/documents/448457/0/Joint+DO_12112021_Registration+on+e-SHRAM+Portal+by+beneficiaries+of+MGNREGS.pdf/a2538e74-eb3a-66a9-da15-f7acbef8786f?t=1637039311698" target="_blank"><span class="mmTitleValue text-voilet text-lg">DO Letter</span> <span class="mmDescriptionValue">Joint D.O. letter dated 12/11/2021 from Secretary(PR) and Secretary(RD) on Registration on e-SHRAM Portal by the beneficiaries of MGNREGS </span> </a></div> </div> </div> </li> <li class="tl-item"> <div class="tl-wrap"><span class="tl-date"><i class="icon-calendar"></i> 12-10-2021</span> <div class="tl-content panel padder b-a slideRight"><span class="arrow left pull-up"></span> <div><a href="/documents/448457/0/Oct2021_MonthlyBulletin_MoPR+%281%29.pdf/cf615013-7e2a-8732-9829-6136182b696e?t=1636890539790" target="_parent"><span class="mmTitleValue text-voilet text-lg">Monthly Status Report</span> <span class="mmDescriptionValue">Monthly Bulletin by Ministry of Panchayati Raj for October 2021</span> </a></div> </div> </div> </li> <!--news ends--><!--news starts--> <li class="tl-item"> <div class="tl-wrap"><span class="tl-date"><i class="icon-calendar"></i> 16-09-2021</span> <div class="tl-content panel padder b-a slideRight"><span class="arrow left pull-up"></span> <div><a href="/documents/20126/0/Joint+DO+letter+from+SPR+and+Secy+DoLE.pdf/d0dbcf65-08c4-36c8-e2a7-84f91454c8d7?t=1631862829450" target="_parent"><span class="mmTitleValue text-voilet text-lg">Joint Advisory</span> <span class="mmDescriptionValue">Utilisation of Central Finance Commission Grants for improvements in Schools </span> </a></div> </div> </div> </li> <!--news ends--><!--news starts--> <li class="tl-item"> <div class="tl-wrap"><span class="tl-date"><i class="icon-calendar"></i> 16-08-2021</span> <div class="tl-content panel padder b-a slideRight"><span class="arrow left pull-up"></span> <div><a href="/documents/20126/0/advisory+dt+16-8-21+on+vibrant+Gram+Sabha.pdf/e374fd11-8c60-402a-da87-6051d466f9dc?t=1629872069291" target="_parent"><span class="mmTitleValue text-voilet text-lg">Vibrant Gram Sabha</span> <span class="mmDescriptionValue">MoPR advisory on "Making Gram Sabhas Vibrant" </span> </a></div> </div> </div> <!--news end--></li> </ul> </div> </div>
+        </div>
+        
+    </form>
+</body>
+
+</html>
