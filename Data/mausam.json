@@ -1,0 +1,5178 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Masters API",
+    "description": "",
+    "version": "v1"
+  },
+  "paths": {
+    "/meri_panchayat/api/prd/gp/v1/account/getAccountDetails/{stateId}/{LocalBodyCode}/{LocalbodyTypeCode}": {
+      "get": {
+        "tags": [
+          "Account"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          },
+          {
+            "name": "stateId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2
+            }
+          },
+          {
+            "name": "fYear",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "2022-2023"
+            }
+          },
+          {
+            "name": "LocalBodyCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 236039
+            }
+          },
+          {
+            "name": "LocalbodyTypeCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 3
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/gp/v1/account/getTransactionDetails": {
+      "post": {
+        "tags": [
+          "Account"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Masters.API.Controllers.Done.AccountController+getTransactionDetailsReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Masters.API.Controllers.Done.AccountController+getTransactionDetailsReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Masters.API.Controllers.Done.AccountController+getTransactionDetailsReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/gp/v1/activity/saveWorkProgress": {
+      "post": {
+        "tags": [
+          "Activity"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "required": [
+                  "AstCd",
+                  "captureTime",
+                  "deviceDesc",
+                  "image",
+                  "imeino",
+                  "ip",
+                  "lclbdyCd",
+                  "lclbdyTypCd",
+                  "mulGeoTag",
+                  "photoAccuracy",
+                  "photoLatitude",
+                  "rmrk",
+                  "stageCd",
+                  "statusCd",
+                  "uploadOrSyncTime",
+                  "userId",
+                  "wrkCd"
+                ],
+                "type": "object",
+                "properties": {
+                  "image": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "wrkCd": {
+                    "type": "integer",
+                    "format": "int32",
+                    "default": 59064177
+                  },
+                  "statusCd": {
+                    "type": "integer",
+                    "format": "int32",
+                    "default": 221
+                  },
+                  "stageCd": {
+                    "type": "integer",
+                    "format": "int32",
+                    "default": 12
+                  },
+                  "AstCd": {
+                    "type": "integer",
+                    "format": "int32",
+                    "default": 44803832
+                  },
+                  "rmrk": {
+                    "type": "string",
+                    "default": "remark"
+                  },
+                  "deviceDesc": {
+                    "type": "string",
+                    "default": "deviceDesc"
+                  },
+                  "imeino": {
+                    "type": "string",
+                    "default": "remarimeinok"
+                  },
+                  "ip": {
+                    "type": "string",
+                    "default": "ip"
+                  },
+                  "mulGeoTag": {
+                    "type": "string",
+                    "default": "25-01-2022"
+                  },
+                  "uploadOrSyncTime": {
+                    "type": "string",
+                    "default": "25-01-2022"
+                  },
+                  "captureTime": {
+                    "type": "string",
+                    "default": "25-01-2022"
+                  },
+                  "photoAccuracy": {
+                    "type": "string",
+                    "default": "533."
+                  },
+                  "photoLatitude": {
+                    "type": "string",
+                    "default": "75.55"
+                  },
+                  "userId": {
+                    "type": "integer",
+                    "format": "int32",
+                    "default": 545
+                  },
+                  "lclbdyTypCd": {
+                    "type": "integer",
+                    "format": "int32",
+                    "default": 3
+                  },
+                  "lclbdyCd": {
+                    "type": "integer",
+                    "format": "int32",
+                    "default": 140424
+                  }
+                }
+              },
+              "encoding": {
+                "image": {
+                  "style": "form"
+                },
+                "wrkCd": {
+                  "style": "form"
+                },
+                "statusCd": {
+                  "style": "form"
+                },
+                "stageCd": {
+                  "style": "form"
+                },
+                "AstCd": {
+                  "style": "form"
+                },
+                "rmrk": {
+                  "style": "form"
+                },
+                "deviceDesc": {
+                  "style": "form"
+                },
+                "imeino": {
+                  "style": "form"
+                },
+                "ip": {
+                  "style": "form"
+                },
+                "mulGeoTag": {
+                  "style": "form"
+                },
+                "uploadOrSyncTime": {
+                  "style": "form"
+                },
+                "captureTime": {
+                  "style": "form"
+                },
+                "photoAccuracy": {
+                  "style": "form"
+                },
+                "photoLatitude": {
+                  "style": "form"
+                },
+                "userId": {
+                  "style": "form"
+                },
+                "lclbdyTypCd": {
+                  "style": "form"
+                },
+                "lclbdyCd": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/gp/v1/activity/getactivitySummary/{stateId}/{localBodyCode}/{localBodyTypeCode}/{fYear}": {
+      "get": {
+        "tags": [
+          "Activity"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          },
+          {
+            "name": "stateId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2
+            }
+          },
+          {
+            "name": "localBodyCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 236039
+            }
+          },
+          {
+            "name": "localBodyTypeCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 3
+            }
+          },
+          {
+            "name": "fYear",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "2022-2023"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/gp/v1/activity/getactivitylistByAstSubCatId/{stateId}/{localBodyCode}/{localBodyTypeCode}/{activityType}/{activityStatusId}/{fYear}/{assetSubCategoryId}": {
+      "get": {
+        "tags": [
+          "Activity"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          },
+          {
+            "name": "stateId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2
+            }
+          },
+          {
+            "name": "localBodyCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 236039
+            }
+          },
+          {
+            "name": "localBodyTypeCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 3
+            }
+          },
+          {
+            "name": "activityType",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "F"
+            }
+          },
+          {
+            "name": "activityStatusId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 221
+            }
+          },
+          {
+            "name": "assetSubCategoryId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 0
+            }
+          },
+          {
+            "name": "fYear",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "2022-2023"
+            }
+          },
+          {
+            "name": "skip",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 10
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/gp/v1/activity/getactivitylist/{stateId}/{localBodyCode}/{localBodyTypeCode}/{activityType}/{activityStatusId}/{fYear}": {
+      "get": {
+        "tags": [
+          "Activity"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          },
+          {
+            "name": "stateId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2
+            }
+          },
+          {
+            "name": "localBodyCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 236039
+            }
+          },
+          {
+            "name": "localBodyTypeCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 3
+            }
+          },
+          {
+            "name": "activityType",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "F"
+            }
+          },
+          {
+            "name": "activityStatusId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 221
+            }
+          },
+          {
+            "name": "fYear",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "2022-2023"
+            }
+          },
+          {
+            "name": "skip",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 10
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/gp/v1/activity/getactivityById/{stateId}/{workId}": {
+      "get": {
+        "tags": [
+          "Activity"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          },
+          {
+            "name": "stateId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2
+            }
+          },
+          {
+            "name": "workId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 57100337
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/gp/v1/activity/getactivityByLatLong": {
+      "post": {
+        "tags": [
+          "Activity"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Masters.DTO.RequestModels.activityByLatLongReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Masters.DTO.RequestModels.activityByLatLongReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Masters.DTO.RequestModels.activityByLatLongReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/gp/v1/activity/getactivityPayment/{stateId}/{activityId}": {
+      "get": {
+        "tags": [
+          "Activity"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          },
+          {
+            "name": "fYear",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "2022-2023"
+            }
+          },
+          {
+            "name": "localBodyCode",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 236039
+            }
+          },
+          {
+            "name": "stateId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2
+            }
+          },
+          {
+            "name": "activityId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 57100337
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/gp/v1/activity/getActivityStatus": {
+      "get": {
+        "tags": [
+          "ActivityMaster"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/gp/v1/activity/getStage/{activityStatusId}": {
+      "get": {
+        "tags": [
+          "ActivityMaster"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          },
+          {
+            "name": "activityStatusId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/gp/v1/activity/getassetType": {
+      "get": {
+        "tags": [
+          "ActivityMaster"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/gp/v1/activity/getAssetCategory/{typeId}": {
+      "get": {
+        "tags": [
+          "ActivityMaster"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          },
+          {
+            "name": "typeId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 0
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/gp/v1/activity/getAssetSubCategory/{categoryId}": {
+      "get": {
+        "tags": [
+          "ActivityMaster"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          },
+          {
+            "name": "categoryId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 0
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/gp/v1/activity/getActivityFocusArea": {
+      "get": {
+        "tags": [
+          "ActivityMaster"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/gp/v1/activity/getWorkTypes": {
+      "get": {
+        "tags": [
+          "ActivityMaster"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/gp/v1/getAssetsDetails/{stateId}/{LocalBodyCode}/{LocalbodyTypeCode}": {
+      "get": {
+        "tags": [
+          "Asset"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          },
+          {
+            "name": "stateId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2
+            }
+          },
+          {
+            "name": "LocalBodyCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 236039
+            }
+          },
+          {
+            "name": "LocalbodyTypeCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 3
+            }
+          },
+          {
+            "name": "assetTypeId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "skip",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 10
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/pc/v1/getDocuments/{stateId}": {
+      "get": {
+        "tags": [
+          "CitizenCharter"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          },
+          {
+            "name": "stateId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/pc/v1/getServiceCategories/{stateId}": {
+      "get": {
+        "tags": [
+          "CitizenCharter"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          },
+          {
+            "name": "stateId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/pc/v1/getOfferedService/{stateId}/{serviceCategoryId}": {
+      "get": {
+        "tags": [
+          "CitizenCharter"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          },
+          {
+            "name": "stateId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2
+            }
+          },
+          {
+            "name": "serviceCategoryId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/gp/v1/Committee/getcommitteetypes": {
+      "get": {
+        "tags": [
+          "Committee"
+        ],
+        "parameters": [
+          {
+            "name": "stateId",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2
+            }
+          },
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/gp/v1/Committee/getCommittees/{stateId}/{LocalBodyCode}/{LocalbodyTypeCode}": {
+      "get": {
+        "tags": [
+          "Committee"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          },
+          {
+            "name": "stateId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2
+            }
+          },
+          {
+            "name": "LocalBodyCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 236039
+            }
+          },
+          {
+            "name": "LocalbodyTypeCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 3
+            }
+          },
+          {
+            "name": "committeeType",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "skip",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 10
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/gp/v1/Committee/getCommitteeMembers/{stateId}/{LocalBodyCode}/{LocalbodyTypeCode}": {
+      "get": {
+        "tags": [
+          "Committee"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          },
+          {
+            "name": "stateId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2
+            }
+          },
+          {
+            "name": "LocalBodyCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 236039
+            }
+          },
+          {
+            "name": "LocalbodyTypeCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 3
+            }
+          },
+          {
+            "name": "committeeId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/icons/{name}": {
+      "get": {
+        "tags": [
+          "Icon"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "atm.png"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/master/v1/GetStates": {
+      "get": {
+        "tags": [
+          "Master"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          },
+          {
+            "name": "stateId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/master/v1/getMajorGeneralCds": {
+      "get": {
+        "tags": [
+          "Master"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/master/v1/getMnrGeneralCds/{majorId}": {
+      "get": {
+        "tags": [
+          "Master"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          },
+          {
+            "name": "majorId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 30
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/master/v1/getFinancialYears": {
+      "get": {
+        "tags": [
+          "Master"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/master/v1/getZPList/{stateId}": {
+      "get": {
+        "tags": [
+          "Master"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          },
+          {
+            "name": "stateId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/master/v1/getBlockPanchayatList/{stateId}/{zpId}/{hrrchyTyp}/{LclbdyTypCd}": {
+      "get": {
+        "tags": [
+          "Master"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          },
+          {
+            "name": "stateId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2
+            }
+          },
+          {
+            "name": "zpId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 22
+            }
+          },
+          {
+            "name": "LclbdyTypCd",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 3
+            }
+          },
+          {
+            "name": "hrrchyTyp",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "P"
+            }
+          },
+          {
+            "name": "fYear",
+            "in": "header",
+            "schema": {
+              "type": "string",
+              "default": "2022-2023",
+              "nullable": true
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/master/v1/getGramPanchayatList/{stateId}/{zpId}/{bpId}/{hrrchyTyp}/{LclbdyTypCd}": {
+      "get": {
+        "tags": [
+          "Master"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          },
+          {
+            "name": "stateId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2
+            }
+          },
+          {
+            "name": "zpId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 22
+            }
+          },
+          {
+            "name": "bpId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 770
+            }
+          },
+          {
+            "name": "LclbdyTypCd",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 3
+            }
+          },
+          {
+            "name": "hrrchyTyp",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "P"
+            }
+          },
+          {
+            "name": "fYear",
+            "in": "header",
+            "schema": {
+              "type": "string",
+              "default": "2022-2023",
+              "nullable": true
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/master/v1/getVillages/{stateId}/{gpId}": {
+      "get": {
+        "tags": [
+          "Master"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          },
+          {
+            "name": "stateId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2
+            }
+          },
+          {
+            "name": "gpId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 236039
+            }
+          },
+          {
+            "name": "fYear",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "2022-2023"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/master/v1/getNearByList": {
+      "get": {
+        "tags": [
+          "Master"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/master/v1/searchGPByName/{stateId}": {
+      "get": {
+        "tags": [
+          "Panchayat"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          },
+          {
+            "name": "fYear",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "2022-2023"
+            }
+          },
+          {
+            "name": "stateId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2
+            }
+          },
+          {
+            "name": "gpName",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/master/v1/searchGPByPINCode/{pincode}": {
+      "get": {
+        "tags": [
+          "Panchayat"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          },
+          {
+            "name": "fYear",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "2022-2023"
+            }
+          },
+          {
+            "name": "pincode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 470021
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/master/v1/getGramPanchayatByLatLong/{lat}/{lon}": {
+      "get": {
+        "tags": [
+          "Panchayat"
+        ],
+        "parameters": [
+          {
+            "name": "lat",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          {
+            "name": "lon",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          {
+            "name": "km",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          },
+          {
+            "name": "fYear",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "2022-2023"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/master/v1/registerphoto": {
+      "post": {
+        "tags": [
+          "Panchayat"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "required": [
+                  "image",
+                  "imeino",
+                  "ip",
+                  "lat",
+                  "lclbdyCd",
+                  "lclbdyTypCd",
+                  "lon",
+                  "photoType",
+                  "stateid",
+                  "userId"
+                ],
+                "type": "object",
+                "properties": {
+                  "image": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "photoType": {
+                    "type": "string",
+                    "default": "F"
+                  },
+                  "stateid": {
+                    "type": "integer",
+                    "format": "int32",
+                    "default": 23
+                  },
+                  "lclbdyTypCd": {
+                    "type": "integer",
+                    "format": "int32",
+                    "default": 3
+                  },
+                  "lclbdyCd": {
+                    "type": "integer",
+                    "format": "int32",
+                    "default": 134252
+                  },
+                  "imeino": {
+                    "type": "string",
+                    "default": "IMEI"
+                  },
+                  "ip": {
+                    "type": "string",
+                    "default": "10.25.5.3"
+                  },
+                  "lat": {
+                    "type": "number",
+                    "format": "double",
+                    "default": 23.226
+                  },
+                  "lon": {
+                    "type": "number",
+                    "format": "double",
+                    "default": 78.555
+                  },
+                  "userId": {
+                    "type": "integer",
+                    "format": "int32",
+                    "default": 123
+                  }
+                }
+              },
+              "encoding": {
+                "image": {
+                  "style": "form"
+                },
+                "photoType": {
+                  "style": "form"
+                },
+                "stateid": {
+                  "style": "form"
+                },
+                "lclbdyTypCd": {
+                  "style": "form"
+                },
+                "lclbdyCd": {
+                  "style": "form"
+                },
+                "imeino": {
+                  "style": "form"
+                },
+                "ip": {
+                  "style": "form"
+                },
+                "lat": {
+                  "style": "form"
+                },
+                "lon": {
+                  "style": "form"
+                },
+                "userId": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/master/v1/getGPPhoto": {
+      "post": {
+        "tags": [
+          "Panchayat"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "lclbdyTypCd",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 3
+            }
+          },
+          {
+            "name": "lclbdyCd",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 236039
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/master/v1/getGenericPhotos/{lang}": {
+      "get": {
+        "tags": [
+          "Panchayat"
+        ],
+        "parameters": [
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          },
+          {
+            "name": "fYear",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "2022-2023"
+            }
+          },
+          {
+            "name": "lang",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "D"
+            }
+          },
+          {
+            "name": "fileLocation",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "san_urja/mp/gp/23/134252/134252_f.png"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/master/v1/getfile/{lang}": {
+      "get": {
+        "tags": [
+          "Panchayat"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "D"
+            }
+          },
+          {
+            "name": "fileLocation",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "san_urja/mp/js/jquery363.min.js"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/scheme/v1/getSchemeWiseReceiptExpenditure": {
+      "get": {
+        "tags": [
+          "Plan"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          },
+          {
+            "name": "stateId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2
+            }
+          },
+          {
+            "name": "fYear",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "2022-2023"
+            }
+          },
+          {
+            "name": "localBodyTypeCode",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 236039
+            }
+          },
+          {
+            "name": "localBodyCode",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 3
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/plan/v1/get/actionplans": {
+      "get": {
+        "tags": [
+          "Plan"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          },
+          {
+            "name": "stateId",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2
+            }
+          },
+          {
+            "name": "fYear",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "2022-2023"
+            }
+          },
+          {
+            "name": "gpId",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 236039
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/plan/v1/get/sectoralview": {
+      "get": {
+        "tags": [
+          "Plan"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          },
+          {
+            "name": "stateId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2
+            }
+          },
+          {
+            "name": "plancode",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 3888643
+            }
+          },
+          {
+            "name": "gpId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 236039
+            }
+          },
+          {
+            "name": "fYear",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "2022-2023"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/plan/v1/get/getactivitylistbysectorid": {
+      "get": {
+        "tags": [
+          "Plan"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          },
+          {
+            "name": "plancode",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 3888643
+            }
+          },
+          {
+            "name": "sectorId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 13
+            }
+          },
+          {
+            "name": "stateId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2
+            }
+          },
+          {
+            "name": "gpId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 236039
+            }
+          },
+          {
+            "name": "fYear",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "2022-2023"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/plan/v1/get/getactivitylistbyplancode": {
+      "get": {
+        "tags": [
+          "Plan"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          },
+          {
+            "name": "plancode",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 3888643
+            }
+          },
+          {
+            "name": "stateId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2
+            }
+          },
+          {
+            "name": "gpId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 236039
+            }
+          },
+          {
+            "name": "fYear",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "2022-2023"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/gp/v1/profile/getGPDetails/{stateId}/{LocalBodyCode}/{LocalBodyTypeCode}": {
+      "get": {
+        "tags": [
+          "Profile"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          },
+          {
+            "name": "stateId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2
+            }
+          },
+          {
+            "name": "LocalBodyCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 236039
+            }
+          },
+          {
+            "name": "LocalBodyTypeCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 3
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/gp/v1/profile/getJanPratinidhi/{stateId}/{LocalBodyCode}/{LocalBodyTypeCode}": {
+      "get": {
+        "tags": [
+          "Profile"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          },
+          {
+            "name": "stateId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2
+            }
+          },
+          {
+            "name": "LocalBodyCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 236039
+            }
+          },
+          {
+            "name": "LocalBodyTypeCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 3
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/gp/v1/profile/getLokSewak/{stateId}/{LocalBodyCode}/{LocalBodyTypeCode}": {
+      "get": {
+        "tags": [
+          "Profile"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          },
+          {
+            "name": "stateId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2
+            }
+          },
+          {
+            "name": "LocalBodyCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 236039
+            }
+          },
+          {
+            "name": "LocalBodyTypeCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 3
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/gp/v1/profile/getBasicProfile/{stateId}/{LocalBodyCode}/{LocalBodyTypeCode}": {
+      "get": {
+        "tags": [
+          "Profile"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          },
+          {
+            "name": "stateId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2
+            }
+          },
+          {
+            "name": "LocalBodyCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 236039
+            }
+          },
+          {
+            "name": "LocalBodyTypeCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 3
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/gp/v1/profile/getMiscellaneousDetails/{stateId}/{LocalBodyCode}/{LocalBodyTypeCode}": {
+      "get": {
+        "tags": [
+          "Profile"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          },
+          {
+            "name": "stateId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2
+            }
+          },
+          {
+            "name": "LocalBodyCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 236039
+            }
+          },
+          {
+            "name": "LocalBodyTypeCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 3
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/gp/v1/profile/getWaterSources/{stateId}/{LocalBodyCode}/{LocalBodyTypeCode}": {
+      "get": {
+        "tags": [
+          "Profile"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          },
+          {
+            "name": "stateId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2
+            }
+          },
+          {
+            "name": "LocalBodyCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 236039
+            }
+          },
+          {
+            "name": "LocalBodyTypeCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 3
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/pr/v1/activity/registerReview": {
+      "post": {
+        "tags": [
+          "PublicReview"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "required": [
+                  "AstCd",
+                  "dNm",
+                  "imeino",
+                  "ip",
+                  "lat",
+                  "lclbdyCd",
+                  "lclbdyTypCd",
+                  "lon",
+                  "rmrk",
+                  "rtng",
+                  "stateid",
+                  "userId",
+                  "usrTypId",
+                  "wrkCd"
+                ],
+                "type": "object",
+                "properties": {
+                  "wrkCd": {
+                    "type": "integer",
+                    "format": "int32",
+                    "default": 59064177
+                  },
+                  "AstCd": {
+                    "type": "integer",
+                    "format": "int32",
+                    "default": 44803832
+                  },
+                  "rtng": {
+                    "type": "integer",
+                    "format": "int32",
+                    "default": 5
+                  },
+                  "rmrk": {
+                    "type": "string",
+                    "default": "ok"
+                  },
+                  "image": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "format": "binary"
+                    },
+                    "nullable": true
+                  },
+                  "stateid": {
+                    "type": "integer",
+                    "format": "int32",
+                    "default": 23
+                  },
+                  "lclbdyTypCd": {
+                    "type": "integer",
+                    "format": "int32",
+                    "default": 3
+                  },
+                  "lclbdyCd": {
+                    "type": "integer",
+                    "format": "int32",
+                    "default": 140424
+                  },
+                  "imeino": {
+                    "type": "string",
+                    "default": "imei"
+                  },
+                  "ip": {
+                    "type": "string",
+                    "default": "10.1"
+                  },
+                  "lat": {
+                    "type": "number",
+                    "format": "double",
+                    "default": 23.5
+                  },
+                  "lon": {
+                    "type": "number",
+                    "format": "double",
+                    "default": 75.55
+                  },
+                  "userId": {
+                    "type": "integer",
+                    "format": "int64",
+                    "default": 9425609898
+                  },
+                  "usrTypId": {
+                    "type": "integer",
+                    "format": "int32",
+                    "default": 32
+                  },
+                  "dNm": {
+                    "type": "string",
+                    "default": "User Name"
+                  }
+                }
+              },
+              "encoding": {
+                "wrkCd": {
+                  "style": "form"
+                },
+                "AstCd": {
+                  "style": "form"
+                },
+                "rtng": {
+                  "style": "form"
+                },
+                "rmrk": {
+                  "style": "form"
+                },
+                "image": {
+                  "style": "form"
+                },
+                "stateid": {
+                  "style": "form"
+                },
+                "lclbdyTypCd": {
+                  "style": "form"
+                },
+                "lclbdyCd": {
+                  "style": "form"
+                },
+                "imeino": {
+                  "style": "form"
+                },
+                "ip": {
+                  "style": "form"
+                },
+                "lat": {
+                  "style": "form"
+                },
+                "lon": {
+                  "style": "form"
+                },
+                "userId": {
+                  "style": "form"
+                },
+                "usrTypId": {
+                  "style": "form"
+                },
+                "dNm": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/pr/v1/activity/viewReview": {
+      "post": {
+        "tags": [
+          "PublicReview"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Masters.DTO.RequestModels.PublicReviewGetReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Masters.DTO.RequestModels.PublicReviewGetReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Masters.DTO.RequestModels.PublicReviewGetReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/static/v1/getPrivacyPolicy/{lang}": {
+      "get": {
+        "tags": [
+          "Static"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/static/v1/gethtmlData/{lang}/{id}": {
+      "get": {
+        "tags": [
+          "Static"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "1"
+            }
+          },
+          {
+            "name": "lang",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/static/v1/getSourceData/{lang}": {
+      "get": {
+        "tags": [
+          "Static"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/master/v1/api/testupload/app/data": {
+      "post": {
+        "tags": [
+          "TestUpload"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "type": "string",
+                    "format": "binary",
+                    "nullable": true
+                  }
+                }
+              },
+              "encoding": {
+                "file": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/master/v1/paras/doc_uploadfile": {
+      "post": {
+        "tags": [
+          "TestUpload"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "type": "string",
+                    "format": "binary",
+                    "nullable": true
+                  }
+                }
+              },
+              "encoding": {
+                "file": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/master/v1/localupload/doc_uploadfile/{directoryName}": {
+      "post": {
+        "tags": [
+          "TestUpload"
+        ],
+        "parameters": [
+          {
+            "name": "directoryName",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "type": "string",
+                    "format": "binary",
+                    "nullable": true
+                  }
+                }
+              },
+              "encoding": {
+                "file": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/master/v1/localupload/doc_GetFile/{directoryName}": {
+      "get": {
+        "tags": [
+          "TestUpload"
+        ],
+        "parameters": [
+          {
+            "name": "fileName",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "name": "directoryName",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/master/v1/SanurjaUpload_url/uploadfile": {
+      "post": {
+        "tags": [
+          "TestUpload"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "type": "string",
+                    "format": "binary",
+                    "nullable": true
+                  }
+                }
+              },
+              "encoding": {
+                "file": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/master/v1/SanurjaUpload_url/GetFile": {
+      "get": {
+        "tags": [
+          "TestUpload"
+        ],
+        "parameters": [
+          {
+            "name": "fileName",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/master/v1/SanurjaUpload_dir/uploadfile/{directoryName}": {
+      "post": {
+        "tags": [
+          "TestUpload"
+        ],
+        "parameters": [
+          {
+            "name": "directoryName",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "type": "string",
+                    "format": "binary",
+                    "nullable": true
+                  }
+                }
+              },
+              "encoding": {
+                "file": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/master/v1/SanurjaUpload_dir/GetFile/{directoryName}": {
+      "get": {
+        "tags": [
+          "TestUpload"
+        ],
+        "parameters": [
+          {
+            "name": "fileName",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "name": "directoryName",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/master/v1/api/uploadfile_Network/{directoryName}": {
+      "post": {
+        "tags": [
+          "TestUpload"
+        ],
+        "parameters": [
+          {
+            "name": "directoryName",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "type": "string",
+                    "format": "binary",
+                    "nullable": true
+                  }
+                }
+              },
+              "encoding": {
+                "file": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/master/v1/api/GetFile_Network/{directoryName}": {
+      "get": {
+        "tags": [
+          "TestUpload"
+        ],
+        "parameters": [
+          {
+            "name": "fileName",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "name": "directoryName",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/master/v1/Version/Get": {
+      "get": {
+        "tags": [
+          "Version"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "schema": {
+              "type": "string",
+              "default": "en-IN",
+              "nullable": true
+            }
+          },
+          {
+            "name": "versionApiKey",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "gITzdnMlGTKRhP6Ybj55lY4Jufzqal/zRIqckr69WylkOUR21s2ugT1RUrCF17GgJAhZCHiqhahJb/8H/t0RiZferKD2yb4OXmZvzIstNZJdhnQEIHvS1HNVYX8de4reYI0H3ZXcESTaB67TZ87VjjYJ7nlr3UNhc7EW0fBOM5/5luGbWSmSDnStn6Pcn//dKoYsUmilxoocHxO+omxtIU9W+C0ejnl2R1aML7cXDA842qtpLYMG4YAR2CfVLAankg0w5kuVyPQvagdVqrEqu02fdkqqk1/+0huhii7L4pJX885NpqFV1yJv9KnlUMZRLgZ+iglJZr9jl8eJ+LrjSQ==",
+              "nullable": true
+            }
+          },
+          {
+            "name": "uuid",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "asAsas",
+              "nullable": true
+            }
+          },
+          {
+            "name": "ip",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "10.1.37.12",
+              "nullable": true
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/master/v1/getMenu": {
+      "post": {
+        "tags": [
+          "Version"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Masters.DTO.RequestModels.GetMenuRoles"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Masters.DTO.RequestModels.GetMenuRoles"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Masters.DTO.RequestModels.GetMenuRoles"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/master/v1/getMoreServices": {
+      "post": {
+        "tags": [
+          "Version"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Masters.DTO.RequestModels.GetMenuRoles"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Masters.DTO.RequestModels.GetMenuRoles"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Masters.DTO.RequestModels.GetMenuRoles"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/prd/master/v1/getLocalization": {
+      "get": {
+        "tags": [
+          "Version"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/voucher/v1/getePaymentOrders": {
+      "post": {
+        "tags": [
+          "Voucher"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Masters.DTO.RequestModels.ePaymentOrdersReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Masters.DTO.RequestModels.ePaymentOrdersReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Masters.DTO.RequestModels.ePaymentOrdersReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/meri_panchayat/api/voucher/v1/getePaymentOrderTransactions": {
+      "post": {
+        "tags": [
+          "Voucher"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "en-IN"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "30122022033622"
+            }
+          },
+          {
+            "name": "accesskey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "541C469D-4E5E-4A72-8F84-DB9AF490F363"
+            }
+          },
+          {
+            "name": "secretkey",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "83cd92f123fa6e6d5cf8aad3a5daee10"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Masters.DTO.RequestModels.getePaymentOrderTransactionsReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Masters.DTO.RequestModels.getePaymentOrderTransactionsReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Masters.DTO.RequestModels.getePaymentOrderTransactionsReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Masters.API.Controllers.Done.AccountController+getTransactionDetailsReq": {
+        "type": "object",
+        "properties": {
+          "accountNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "stateId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fYear": {
+            "type": "string",
+            "nullable": true
+          },
+          "localBodyCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "localbodyTypeCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "accountType": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "skip": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "limit": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Masters.DTO.RequestModels.activityByLatLongReq": {
+        "type": "object",
+        "properties": {
+          "stateId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "localBodyCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "localBodyTypeCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fYear": {
+            "type": "string",
+            "nullable": true
+          },
+          "activityStatusId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "activityTypeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "lat": {
+            "type": "number",
+            "format": "double"
+          },
+          "lon": {
+            "type": "number",
+            "format": "double"
+          },
+          "radius": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Masters.DTO.RequestModels.PublicReviewGetReq": {
+        "required": [
+          "lclbdyCd",
+          "lclbdyTypCd",
+          "stateid",
+          "wrkCd"
+        ],
+        "type": "object",
+        "properties": {
+          "wrkCd": {
+            "type": "integer",
+            "format": "int32",
+            "default": 59064177
+          },
+          "stateid": {
+            "type": "integer",
+            "format": "int32",
+            "default": 44803832
+          },
+          "lclbdyTypCd": {
+            "type": "integer",
+            "format": "int32",
+            "default": 3
+          },
+          "lclbdyCd": {
+            "type": "integer",
+            "format": "int32",
+            "default": 140424
+          }
+        },
+        "additionalProperties": false
+      },
+      "Masters.DTO.RequestModels.GetMenuRoles": {
+        "type": "object",
+        "properties": {
+          "rls": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Masters.DTO.RequestModels.ePaymentOrdersReq": {
+        "required": [
+          "fYear",
+          "limit",
+          "localBodyCode",
+          "localBodyTypeCode",
+          "skip",
+          "stateId"
+        ],
+        "type": "object",
+        "properties": {
+          "stateId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fYear": {
+            "type": "string"
+          },
+          "localBodyCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "localBodyTypeCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "skip": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "limit": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Masters.DTO.RequestModels.getePaymentOrderTransactionsReq": {
+        "required": [
+          "fYear",
+          "limit",
+          "localBodyCode",
+          "localBodyTypeCode",
+          "skip",
+          "stateId",
+          "voucherId"
+        ],
+        "type": "object",
+        "properties": {
+          "stateId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fYear": {
+            "type": "string"
+          },
+          "voucherId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "localBodyCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "localBodyTypeCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "skip": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "limit": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "description": "Enter 'Bearer' [space] and then your valid token in the text input below.\r\n\r\nExample: \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9\"",
+        "name": "Authorization",
+        "in": "header"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": []
+    }
+  ]
+}
